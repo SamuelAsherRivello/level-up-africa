@@ -1,7 +1,7 @@
 
 # Level Up Africa
 
-This repo includes Project Structure Best Practices and C# Coding Standards for Unity.
+This repo includes Unity Demos. **Level Up Africa offers** the "Unity Game Development Training" program for students in the African continent.
 
 <img width="300" src="./Unity/Assets/Documentation/Images/level-up-africa.png" alt="Best Practices">
 
