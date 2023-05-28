@@ -1,4 +1,6 @@
+using System.Numerics;
 using UnityEngine;
+using Vector2 = UnityEngine.Vector2;
 
 namespace RMC.LevelUpAfrica
 {
@@ -17,29 +19,50 @@ namespace RMC.LevelUpAfrica
 
 
         //  Properties ------------------------------------
-
+        public Vector2 ScrollSpeed
+        {
+            get
+            {
+                return _scrollSpeed;
+            }
+            set
+            {
+                //Only if the value has changed
+                if (_scrollSpeed != value)
+                {
+                    // Store the material reference (just once)
+                    if (_material == null)
+                    {
+                        _material = _renderer.material;
+                    }
+              
+                    // Store the value
+                    _scrollSpeed = value;
+                    
+                    // Update the ShaderGraph value
+                    _material.SetVector("_ScrollSpeed", _scrollSpeed);
+                }
+        
+            }
+        }
 
         //  Fields ----------------------------------------
-
+        [SerializeField] 
+        private Renderer _renderer;
+        
+        private Material _material;
+        private Vector2 _scrollSpeed;
         
         //  Unity Methods ---------------------------------
         protected void Start()
         {
             Debug.Log($"{GetType().Name}.Start()");
+
+            ScrollSpeed = new Vector2(0, 0.1f);
         }
-
-
+        
         //  Methods ---------------------------------------
-        public string SamplePublicMethod(string message)
-        {
-            return message;
-        }
-
 
         //  Event Handlers --------------------------------
-        public void Target_OnCompleted(string message)
-        {
-
-        }
     }
 }
