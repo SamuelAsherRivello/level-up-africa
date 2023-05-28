@@ -1,0 +1,5 @@
+Source Url: 
+* https://assetstore.unity.com/packages/2d/textures-materials/dynamic-space-background-lite-104606
+
+Changelog: 
+* Moved to /Assets/3rdParty/
