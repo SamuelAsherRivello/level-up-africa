@@ -1,0 +1,12 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/UIToolkitStyles.uss?fileID=7433441132597879392&amp;guid=c3e1f721bbbac4f4c989ecbcf7b7ee7f&amp;type=3#UIToolkitStyles" />
+    <ui:VisualElement name="Contents" class="screen">
+        <ui:VisualElement name="InstructionsSection" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); position: absolute; left: 0;">
+            <ui:Label tabindex="-1" text="Arrow Keys: Move&#10;Spacebar: Shoot" display-tooltip-when-elided="true" name="InstructionsLabel" class="instructions-text" style="position: relative; left: auto;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="StatsSection" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); position: absolute; left: auto; top: auto; right: 0;">
+            <ui:Label tabindex="-1" text="Points: 100" display-tooltip-when-elided="true" name="PointsLabel" class="instructions-text" style="-unity-text-align: upper-right; left: auto; right: auto; position: relative;" />
+            <ui:Label tabindex="-1" text="Lives: 003" display-tooltip-when-elided="true" name="LivesLabel" class="instructions-text" style="-unity-text-align: upper-right; left: auto; right: auto; position: relative;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

@@ -12,43 +12,124 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36cf3b74950b299408cc642cd2423789, type: 3}
   m_Name: ReadMe
   m_EditorClassIdentifier: 
-  Title: My Project
-  Icon: {fileID: 2800000, guid: 7c0822b0780ca4a74b276e50db2c68a3, type: 3}
+  Title: Level Up Africa
+  Icon: {fileID: 2800000, guid: da997c8ba50248944a8f07dceac48d75, type: 3}
   Sections:
   - TextHeading: Welcome
     TextSubheading: 
-    TextBody: This is my project. Created from the Unity Project Template
-    LinkName: Github.com/SamuelAsherRivello/unity-project-template
-    LinkUrl: https://github.com/SamuelAsherRivello/unity-project-template
+    TextBody: The source for this project is on GitHub.
+    LinkName: Github.com/SamuelAsherRivello/level-up-africa/
+    LinkUrl: https://github.com/SamuelAsherRivello/level-up-africa/
+    PingObjectName: 
+    PingObjectGuid: 
+    MenuItemName: 
+    MenuItemPath: 
+  - TextHeading: Features
+    TextSubheading: 
+    TextBody: This project showcases many Unity fundamentals.
+    LinkName: 
+    LinkUrl: 
+    PingObjectName: 
+    PingObjectGuid: 
+    MenuItemName: 
+    MenuItemPath: 
+  - TextHeading: 
+    TextSubheading: 
+    TextBody: UI
+    LinkName: https://docs.unity3d.com/Manual/UIToolkits.html
+    LinkUrl: https://docs.unity3d.com/Manual/UIToolkits.html
+    PingObjectName: 
+    PingObjectGuid: 
+    MenuItemName: 
+    MenuItemPath: 
+  - TextHeading: 
+    TextSubheading: 
+    TextBody: Input
+    LinkName: https://docs.unity3d.com/Manual/Input.html
+    LinkUrl: https://docs.unity3d.com/Manual/Input.html
+    PingObjectName: 
+    PingObjectGuid: 
+    MenuItemName: 
+    MenuItemPath: 
+  - TextHeading: 
+    TextSubheading: 
+    TextBody: Audio
+    LinkName: https://docs.unity3d.com/Manual/Audio.html
+    LinkUrl: https://docs.unity3d.com/Manual/Audio.html
+    PingObjectName: 
+    PingObjectGuid: 
+    MenuItemName: 
+    MenuItemPath: 
+  - TextHeading: 
+    TextSubheading: 
+    TextBody: Graphics
+    LinkName: https://docs.unity3d.com/Manual/Graphics.html
+    LinkUrl: https://docs.unity3d.com/Manual/Graphics.html
+    PingObjectName: 
+    PingObjectGuid: 
+    MenuItemName: 
+    MenuItemPath: 
+  - TextHeading: 
+    TextSubheading: 
+    TextBody: Animation
+    LinkName: https://docs.unity3d.com/Manual/AnimationSection.html
+    LinkUrl: https://docs.unity3d.com/Manual/AnimationSection.html
+    PingObjectName: 
+    PingObjectGuid: 
+    MenuItemName: 
+    MenuItemPath: 
+  - TextHeading: 
+    TextSubheading: 
+    TextBody: Scripting
+    LinkName: https://docs.unity3d.com/Manual/ScriptingSection.html
+    LinkUrl: https://docs.unity3d.com/Manual/ScriptingSection.html
     PingObjectName: 
     PingObjectGuid: 
     MenuItemName: 
     MenuItemPath: 
   - TextHeading: Getting Started
     TextSubheading: 
-    TextBody: Ex. You can open a webpage
-    LinkName: Google.com
-    LinkUrl: http://www.google.com
-    PingObjectName: 
-    PingObjectGuid: 
+    TextBody: Demonstration of an empty Unity scene.
+    LinkName: 
+    LinkUrl: 
+    PingObjectName: Example01_Empty
+    PingObjectGuid: 9814172bf91dcb440a1aeac08d98f3d3
     MenuItemName: 
     MenuItemPath: 
   - TextHeading: 
     TextSubheading: 
-    TextBody: Ex. You can open a menu item
+    TextBody: Demonstration of an simple game with C# scripting.
     LinkName: 
     LinkUrl: 
-    PingObjectName: 
-    PingObjectGuid: 
-    MenuItemName: Window/Package Manager
-    MenuItemPath: Window/Package Manager
+    PingObjectName: Example02_Game_CSharpScripting
+    PingObjectGuid: ce4706fef0fa3404d84f6997bbd41bf7
+    MenuItemName: 
+    MenuItemPath: 
   - TextHeading: 
     TextSubheading: 
-    TextBody: Ex. You can ping a file or folder
+    TextBody: Demonstration of an simple game with visual scripting.
     LinkName: 
     LinkUrl: 
-    PingObjectName: Assets/Documentation/ReadMe/
-    PingObjectGuid: 5a22eb9ce84e5194ca5658315e96758d
+    PingObjectName: Example03_Game_VisualScripting
+    PingObjectGuid: 02cfb5a376ae39f4e8c16b42d06e4b73
+    MenuItemName: 
+    MenuItemPath: 
+  - TextHeading: 
+    TextSubheading: 
+    TextBody: Demonstration of a custom shader with ShaderGraph.
+    LinkName: 
+    LinkUrl: 
+    PingObjectName: Example04_ShaderGraph
+    PingObjectGuid: 1b5bc838416f2eb49b571b922d2a2203
+    MenuItemName: 
+    MenuItemPath: 
+  - TextHeading: 
+    TextSubheading: 
+    TextBody: Demonstration of an empty Unity scene.
+    LinkName: 
+    LinkUrl: 
+    PingObjectName: Demonstration of a visual effect with VFX Graph.
+    PingObjectGuid: 81a6ac839e9940f4e8d4bdb130bdd0ac
     MenuItemName: 
     MenuItemPath: 
   HasLoadedLayout: 0
