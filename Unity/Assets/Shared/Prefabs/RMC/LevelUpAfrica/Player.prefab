@@ -76,7 +76,7 @@ Transform:
   - {fileID: 5479929652667775320}
   - {fileID: 6890664348445761958}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &3139374522979584205
 MonoBehaviour:
@@ -99,6 +99,34 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4576488220851009507}
     m_Modifications:
+    - target: {fileID: 2385187636324492789, guid: 929114d5e603e434b9de8483f2ef41b2, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2385187637168897539, guid: 929114d5e603e434b9de8483f2ef41b2, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3569385799243444164, guid: 929114d5e603e434b9de8483f2ef41b2, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3569411340410986195, guid: 929114d5e603e434b9de8483f2ef41b2, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3569504073449732947, guid: 929114d5e603e434b9de8483f2ef41b2, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3569508464372979167, guid: 929114d5e603e434b9de8483f2ef41b2, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3569552073437248890, guid: 929114d5e603e434b9de8483f2ef41b2, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3592690165032589382, guid: 929114d5e603e434b9de8483f2ef41b2, type: 3}
       propertyPath: m_Name
       value: Model
@@ -157,6 +185,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3592690165032589383, guid: 929114d5e603e434b9de8483f2ef41b2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6268829183030631421, guid: 929114d5e603e434b9de8483f2ef41b2, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7830946704482511925, guid: 929114d5e603e434b9de8483f2ef41b2, type: 3}
+      propertyPath: m_CastShadows
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
