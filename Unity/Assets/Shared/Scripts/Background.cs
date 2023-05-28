@@ -53,6 +53,7 @@ namespace RMC.LevelUpAfrica
         private Material _material;
         private Vector2 _scrollSpeed;
         
+        
         //  Unity Methods ---------------------------------
         protected void Start()
         {

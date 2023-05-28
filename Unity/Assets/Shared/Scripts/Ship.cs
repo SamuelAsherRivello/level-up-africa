@@ -5,7 +5,7 @@ namespace RMC.LevelUpAfrica
     /// <summary>
     /// Replace with comments...
     /// </summary>
-    public class Player : MonoBehaviour
+    public class Ship : MonoBehaviour
     {
         //  Events ----------------------------------------
 

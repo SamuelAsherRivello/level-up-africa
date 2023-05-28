@@ -163,7 +163,7 @@ Camera:
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
-  m_FOVAxisMode: 0
+  m_FOVAxisMode: 1
   m_Iso: 200
   m_ShutterSpeed: 0.005
   m_Aperture: 16
@@ -290,16 +290,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd532fa3f64192b468c4a37bb05418a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _playerMovementSpeed: 0.05
-  _playerMovementSpeedMax: 1
-  _playerMovementFriction: 0.01
+  _shipMovementSpeed: 0.05
+  _shipMovementSpeedMax: 1
+  _shipMovementFriction: 0.01
+  _shipRotationFactor: 0.01
   _rocketMovementSpeed: 1.5
   _rocketMovementAcceleration: 1.001
   _movementInputActionReference: {fileID: -8447166425656975102, guid: fb41b660be494b845898d06faf2e1802, type: 3}
   _shootInputActionReference: {fileID: -1400905118405231253, guid: fb41b660be494b845898d06faf2e1802, type: 3}
   _uiToolkitView: {fileID: 1787319944812763186}
-  _player: {fileID: 4631795586313677100}
-  _background: {fileID: 0}
+  _ship: {fileID: 4631795586313677100}
+  _background: {fileID: 478083267364239746}
   _rocketPrefab: {fileID: -1236086400395598508, guid: 3b8508223f62a854fa7e783dbfd7adf7, type: 3}
 --- !u!4 &1409149260
 Transform:
@@ -571,6 +572,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4512007608421746753, guid: d1e273baea7882948ba350f9bc97d8d0, type: 3}
   m_PrefabInstance: {fileID: 478083267364239744}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &478083267364239746 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2022208529142249452, guid: d1e273baea7882948ba350f9bc97d8d0, type: 3}
+  m_PrefabInstance: {fileID: 478083267364239744}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 000a5f69b60c3e042a650d40b50f4336, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1787319944812763185
 PrefabInstance:
   m_ObjectHideFlags: 0

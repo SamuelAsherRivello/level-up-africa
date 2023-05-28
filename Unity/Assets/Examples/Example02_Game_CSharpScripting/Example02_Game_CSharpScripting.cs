@@ -1,6 +1,6 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.UIElements;
+using UnityEngine.Serialization;
 
 namespace RMC.LevelUpAfrica
 {
@@ -26,15 +26,19 @@ namespace RMC.LevelUpAfrica
         [Header("Settings")] 
         [SerializeField] 
         [Range(0.05f, 0.2f)]
-        private float _playerMovementSpeed = 0.2f; 
+        private float _shipMovementSpeed = 0.2f; 
 
         [SerializeField] 
         [Range(0.5f, 2)]
-        private float _playerMovementSpeedMax = 1; 
+        private float _shipMovementSpeedMax = 1; 
         
         [SerializeField] 
         [Range(0.005f, 0.2f)]
-        private float _playerMovementFriction = .01f; 
+        private float _shipMovementFriction = .01f; 
+        
+        [SerializeField] 
+        private float _shipRotationFactor = .01f; 
+
         
         [SerializeField] 
         [Range(1f, 2)]
@@ -58,7 +62,7 @@ namespace RMC.LevelUpAfrica
 
         [Header("Graphics (Scene)")]
         [SerializeField] 
-        private Player _player;
+        private Ship _ship;
 
         [SerializeField] 
         private Background _background;
@@ -97,16 +101,20 @@ namespace RMC.LevelUpAfrica
             Vector2 movementInput = _movementInputActionReference.action.ReadValue<Vector2>();
 
             // Add Input To Movement
-            _movement = _movement + (movementInput * (Time.deltaTime * _playerMovementSpeed));
+            _movement = _movement + (movementInput * (Time.deltaTime * _shipMovementSpeed));
             
             // Add Friction To Movement
-            _movement = _movement * (1 - _playerMovementFriction);
+            _movement = _movement * (1 - _shipMovementFriction);
             
             // Limit Movement
-            _movement = Vector2.ClampMagnitude(_movement, _playerMovementSpeedMax);
+            _movement = Vector2.ClampMagnitude(_movement, _shipMovementSpeedMax);
             
             // Use Movement
-            _player.transform.Translate(_movement);
+            _ship.transform.Translate(_movement);
+            // _ship.transform.RotateAround(
+            //     _ship.transform.position, 
+            //     Vector3.up, 
+            //     -_movement.x * _shipRotationFactor);
         }
 
         private void UpdateShooting()
@@ -118,7 +126,7 @@ namespace RMC.LevelUpAfrica
             {
                 // Position new rocket
                 Quaternion newRotation = Quaternion.Euler(-90, 0, 0);
-                Vector3 newPosition = _player.RocketSpawnpoint.transform.position;
+                Vector3 newPosition = _ship.RocketSpawnpoint.transform.position;
                 
                 // Create new rocket
                 Rocket rocket = Instantiate(_rocketPrefab, newPosition, newRotation);
