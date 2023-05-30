@@ -1,15 +1,19 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace RMC.LevelUpAfrica
 {
+    //  Event Class ---------------------------------------
+    public class RocketUnityEvent : UnityEvent<Rocket> {}
+            
     /// <summary>
     /// Replace with comments...
     /// </summary>
     public class Rocket : MonoBehaviour
     {
         //  Events ----------------------------------------
-
+        public RocketUnityEvent OnDestroyed = new RocketUnityEvent();
 
         //  Properties ------------------------------------
         public float RocketMovementSpeed 
@@ -59,6 +63,9 @@ namespace RMC.LevelUpAfrica
         {
             // Wait 5 seconds
             yield return new WaitForSeconds(5);
+            
+            // Broadcast event
+            OnDestroyed.Invoke(this);
             
             // Now its probably FAR offscreen. Remove it
             Destroy(gameObject);

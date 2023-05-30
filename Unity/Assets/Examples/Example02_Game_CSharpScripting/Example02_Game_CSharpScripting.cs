@@ -1,15 +1,8 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
-using UnityEngine.Serialization;
 
 namespace RMC.LevelUpAfrica
 {
-    //  Namespace Properties ------------------------------
-
-
-    //  Class Attributes ----------------------------------
-
-
     /// <summary>
     /// Replace with comments...
     /// </summary>
@@ -135,16 +128,18 @@ namespace RMC.LevelUpAfrica
                 rocket.RocketMovementSpeed = _rocketMovementSpeed;
                 rocket.RocketMovementAcceleration = _rocketMovementAcceleration;
                 
-                // Reward Points
-                _points += 1;
-                _uiToolkitView.PointsLabel.text = $"Points: {_points:000}";
+                // Observe events
+                rocket.OnDestroyed.AddListener(Rocket_OnDestroyed);
+       
             }
         }
 
         //  Event Handlers --------------------------------
-        public void Target_OnCompleted(string message)
+        private void Rocket_OnDestroyed(Rocket rocket)
         {
-
+            // Reward Points
+            _points += 1;
+            _uiToolkitView.PointsLabel.text = $"Points: {_points:000}";
         }
     }
 }
