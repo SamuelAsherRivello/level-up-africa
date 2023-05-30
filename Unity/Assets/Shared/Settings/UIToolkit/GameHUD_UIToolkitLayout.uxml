@@ -7,6 +7,7 @@
         <ui:VisualElement name="StatsSection" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); position: absolute; left: auto; top: auto; right: 0;">
             <ui:Label tabindex="-1" text="Points: 100" display-tooltip-when-elided="true" name="PointsLabel" class="instructions-text" style="-unity-text-align: upper-right; left: auto; right: auto; position: relative;" />
             <ui:Label tabindex="-1" text="Lives: 003" display-tooltip-when-elided="true" name="LivesLabel" class="instructions-text" style="-unity-text-align: upper-right; left: auto; right: auto; position: relative;" />
+            <ui:Button text="Restart" display-tooltip-when-elided="true" name="RestartButton" class="button" />
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>

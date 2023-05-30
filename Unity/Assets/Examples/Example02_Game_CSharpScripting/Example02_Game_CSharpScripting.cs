@@ -1,5 +1,7 @@
+using DG.Tweening;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 namespace RMC.LevelUpAfrica
 {
@@ -28,10 +30,6 @@ namespace RMC.LevelUpAfrica
         [SerializeField] 
         [Range(0.005f, 0.2f)]
         private float _shipMovementFriction = .01f; 
-        
-        [SerializeField] 
-        private float _shipRotationFactor = .01f; 
-
         
         [SerializeField] 
         [Range(1f, 2)]
@@ -75,7 +73,11 @@ namespace RMC.LevelUpAfrica
         protected void Start()
         {
             Debug.Log($"{GetType().Name}.Start()");
+            
+            _uiToolkitView.RestartButton.clicked += RestartButton_OnClicked;
         }
+
+
 
         /// <summary>
         /// Unity calls this repeatedly automatically (while Scene is running)
@@ -104,10 +106,7 @@ namespace RMC.LevelUpAfrica
             
             // Use Movement
             _ship.transform.Translate(_movement);
-            // _ship.transform.RotateAround(
-            //     _ship.transform.position, 
-            //     Vector3.up, 
-            //     -_movement.x * _shipRotationFactor);
+            
         }
 
         private void UpdateShooting()
@@ -128,6 +127,14 @@ namespace RMC.LevelUpAfrica
                 rocket.RocketMovementSpeed = _rocketMovementSpeed;
                 rocket.RocketMovementAcceleration = _rocketMovementAcceleration;
                 
+                // Programmatic Animation - Scale Down now 
+                rocket.gameObject.transform.localScale = 
+                    new Vector3(0.1f, 0.1f, 0.1f);
+                
+                // Programmatic Animation - Scale Up soon
+                rocket.gameObject.transform.DOScale(
+                    new Vector3(1, 1, 1), 0.5f).SetEase(Ease.OutExpo);
+                
                 // Observe events
                 rocket.OnDestroyed.AddListener(Rocket_OnDestroyed);
        
@@ -140,6 +147,12 @@ namespace RMC.LevelUpAfrica
             // Reward Points
             _points += 1;
             _uiToolkitView.PointsLabel.text = $"Points: {_points:000}";
+        }
+        
+        private void RestartButton_OnClicked()
+        {
+            // Reload current scene
+            SceneManager.LoadScene(0);
         }
     }
 }

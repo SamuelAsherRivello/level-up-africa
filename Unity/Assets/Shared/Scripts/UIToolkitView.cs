@@ -22,15 +22,21 @@ namespace RMC.LevelUpAfrica
         {
             get
             {
-                return _pointsLabel;
+                return _uiDocument.rootVisualElement.Query<Label>("PointsLabel");
+            }
+        }
+        
+        public Button RestartButton 
+        {
+            get
+            {
+                return _uiDocument.rootVisualElement.Query<Button>("RestartButton");
             }
         }
 
         //  Fields ----------------------------------------
         [SerializeField] 
         private UIDocument _uiDocument;
-
-        private Label _pointsLabel;
 
         
         //  Unity Methods ---------------------------------
@@ -41,14 +47,23 @@ namespace RMC.LevelUpAfrica
         protected void Start()
         {
             Debug.Log($"{GetType().Name}.Start()");
-
-            VisualElement root = _uiDocument.rootVisualElement;
-            _pointsLabel = root.Query<Label>("PointsLabel");
+            
+            RestartButton.RegisterCallback<NavigationSubmitEvent>(
+                RestartButton_NavigationSubmitEvent, TrickleDown.TrickleDown);
         }
-
 
         //  Methods ---------------------------------------
 
         //  Event Handlers --------------------------------
+        
+        /// <summary>
+        /// Unity automatically links clicking the Spacebar
+        /// to clicking the runtime buttons. We don't want that.
+        /// Disable that here.
+        /// </summary>
+        private void RestartButton_NavigationSubmitEvent(NavigationSubmitEvent evt)
+        {
+           evt.StopPropagation();
+        }
     }
 }
