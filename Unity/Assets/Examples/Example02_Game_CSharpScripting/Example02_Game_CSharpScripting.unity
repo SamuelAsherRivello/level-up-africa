@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.36136585, g: 0.36456463, b: 0.33548176, a: 1}
+  m_IndirectSpecularColor: {r: 0.11968589, g: 0.123270154, b: 0.1062796, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -260,6 +260,11 @@ MonoBehaviour:
     mipBias: 0
     varianceClampScale: 0.9
     contrastAdaptiveSharpening: 0
+--- !u!4 &157200374 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8023380926444279662, guid: 685ff72493408af42b09559c46d655d5, type: 3}
+  m_PrefabInstance: {fileID: 5580287029415092384}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1409149258
 GameObject:
   m_ObjectHideFlags: 0
@@ -293,7 +298,6 @@ MonoBehaviour:
   _shipMovementSpeed: 0.05
   _shipMovementSpeedMax: 1
   _shipMovementFriction: 0.01
-  _shipRotationFactor: 0.01
   _rocketMovementSpeed: 1.5
   _rocketMovementAcceleration: 1.001
   _movementInputActionReference: {fileID: -8447166425656975102, guid: fb41b660be494b845898d06faf2e1802, type: 3}
@@ -495,6 +499,7 @@ Transform:
   m_Children:
   - {fileID: 126333141}
   - {fileID: 1794521670}
+  - {fileID: 157200374}
   - {fileID: 2137451243}
   - {fileID: 4631795586313677099}
   - {fileID: 478083267364239745}
@@ -732,3 +737,64 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af99c3158ae647dfbda0c7ec4e364e00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &5580287029415092384
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1880782305}
+    m_Modifications:
+    - target: {fileID: 7898209890585972788, guid: 685ff72493408af42b09559c46d655d5, type: 3}
+      propertyPath: m_Name
+      value: AudioManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 8023380926444279662, guid: 685ff72493408af42b09559c46d655d5, type: 3}
+      propertyPath: m_RootOrder
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8023380926444279662, guid: 685ff72493408af42b09559c46d655d5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8023380926444279662, guid: 685ff72493408af42b09559c46d655d5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8023380926444279662, guid: 685ff72493408af42b09559c46d655d5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8023380926444279662, guid: 685ff72493408af42b09559c46d655d5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8023380926444279662, guid: 685ff72493408af42b09559c46d655d5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8023380926444279662, guid: 685ff72493408af42b09559c46d655d5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8023380926444279662, guid: 685ff72493408af42b09559c46d655d5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8023380926444279662, guid: 685ff72493408af42b09559c46d655d5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8023380926444279662, guid: 685ff72493408af42b09559c46d655d5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8023380926444279662, guid: 685ff72493408af42b09559c46d655d5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 685ff72493408af42b09559c46d655d5, type: 3}

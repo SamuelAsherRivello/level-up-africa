@@ -1,4 +1,5 @@
 using DG.Tweening;
+using RMC.Core.Audio;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
@@ -116,6 +117,9 @@ namespace RMC.LevelUpAfrica
 
             if (isShootingInput)
             {
+                // Play Sound
+                AudioManager.Instance.PlayAudioClip("Rocket"); 
+                    
                 // Position new rocket
                 Quaternion newRotation = Quaternion.Euler(-90, 0, 0);
                 Vector3 newPosition = _ship.RocketSpawnpoint.transform.position;
@@ -151,6 +155,9 @@ namespace RMC.LevelUpAfrica
         
         private void RestartButton_OnClicked()
         {
+            // Play Sound
+            AudioManager.Instance.PlayAudioClip("Click"); 
+            
             // Reload current scene
             SceneManager.LoadScene(0);
         }
