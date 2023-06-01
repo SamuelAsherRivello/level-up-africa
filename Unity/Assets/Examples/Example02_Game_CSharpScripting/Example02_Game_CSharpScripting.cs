@@ -64,7 +64,7 @@ namespace RMC.LevelUpAfrica.Examples
         private Rocket _rocketPrefab;
         
         private Vector2 _movement = new Vector2();
-        private int _points = 100;
+        private int _points = 0;
         private int _rocketSpawnpointIndex = 0;
         
         //  Unity Methods ---------------------------------
@@ -136,7 +136,7 @@ namespace RMC.LevelUpAfrica.Examples
                 Rocket rocket = Instantiate(_rocketPrefab, newPosition, newRotation);
                 
                 // Move new rocket
-                rocket.RocketMovementSpeed = _rocketMovementSpeed;
+                rocket.RocketMovementSpeed = _rocketMovementSpeed + _movement.y;
                 rocket.RocketMovementAcceleration = _rocketMovementAcceleration;
                 
                 // Programmatic Animation - Scale Down now 
@@ -145,10 +145,18 @@ namespace RMC.LevelUpAfrica.Examples
                 
                 // Programmatic Animation - Scale Up soon
                 rocket.gameObject.transform.DOScale(
-                    new Vector3(1, 1, 1), 0.5f).SetEase(Ease.OutExpo);
+                    new Vector3(1, 1, 1), 1f).SetEase(Ease.OutExpo);
+                
+                // Programmatic Animation - Rotate soon
+                rocket.gameObject.transform.DORotate(
+                    new Vector3(0, 90, 0), 3f).SetEase(Ease.OutExpo);
                 
                 // Observe events
                 rocket.OnDestroyed.AddListener(Rocket_OnDestroyed);
+                
+                // Reward Points
+                _points += 1;
+                _uiToolkitView.PointsLabel.text = $"Points: {_points:000}";
        
             }
         }
@@ -156,9 +164,7 @@ namespace RMC.LevelUpAfrica.Examples
         //  Event Handlers --------------------------------
         private void Rocket_OnDestroyed(Rocket rocket)
         {
-            // Reward Points
-            _points += 1;
-            _uiToolkitView.PointsLabel.text = $"Points: {_points:000}";
+            // Do something?
         }
         
         private void RestartButton_OnClicked()

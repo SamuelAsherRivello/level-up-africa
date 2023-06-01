@@ -1,8 +1,4 @@
-using DG.Tweening;
-using RMC.Core.Audio;
 using UnityEngine;
-using UnityEngine.InputSystem;
-using UnityEngine.SceneManagement;
 
 namespace RMC.LevelUpAfrica.Examples
 {
@@ -22,6 +18,8 @@ namespace RMC.LevelUpAfrica.Examples
         [Header("UI (Scene)")]
         [SerializeField] 
         private UIToolkitView _uiToolkitView;
+
+        private int _points = 0;
         
         //  Unity Methods ---------------------------------
         
@@ -34,9 +32,7 @@ namespace RMC.LevelUpAfrica.Examples
             
             // UI Toolkit - Observe Event
             _uiToolkitView.RestartButton.clicked += RestartButton_OnClicked;
-            
-            // UI Toolkit - Update Layout
-            _uiToolkitView.PointsLabel.text = $"Points: {5:000}";
+ 
         }
 
         //  Methods ---------------------------------------
@@ -45,8 +41,9 @@ namespace RMC.LevelUpAfrica.Examples
         //  Event Handlers --------------------------------
         private void RestartButton_OnClicked()
         {
-            // UI Toolkit - Handle Click
-            SceneManager.LoadScene(0);
+            // UI Toolkit - Update Layout
+            _points++;
+            _uiToolkitView.PointsLabel.text = $"Points: {_points:000}";
         }
     }
 }

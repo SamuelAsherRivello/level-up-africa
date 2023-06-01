@@ -1,4 +1,4 @@
-.instructions-text {
+.label {
     left: 0;
     color: rgb(255, 255, 255);
     font-size: 30px;
@@ -15,7 +15,7 @@
 }
 
 .button {
-    font-size: 20px;
+    font-size: 30px;
     padding-left: 5px;
     padding-right: 5px;
     padding-top: 5px;
@@ -24,4 +24,5 @@
     margin-right: 10px;
     margin-top: 10px;
     margin-bottom: 0;
+    -unity-font-style: bold;
 }

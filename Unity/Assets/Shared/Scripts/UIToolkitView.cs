@@ -22,7 +22,7 @@ namespace RMC.LevelUpAfrica.Examples
         {
             get
             {
-                return _uiDocument.rootVisualElement.Query<Label>("PointsLabel");
+                return _uiDocument.rootVisualElement.Query<Label>("pointsLabel");
             }
         }
         
@@ -30,7 +30,7 @@ namespace RMC.LevelUpAfrica.Examples
         {
             get
             {
-                return _uiDocument.rootVisualElement.Query<Button>("RestartButton");
+                return _uiDocument.rootVisualElement.Query<Button>("restartButton");
             }
         }
 
