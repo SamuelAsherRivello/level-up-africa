@@ -24,10 +24,15 @@ button {
     background-color: #007BFF;
     color: white;
     cursor: pointer;
-    transition: transform .2s; /* Animation */
+    transition: transform .2s; 
 }
 
 button:hover {
     background-color: #0056b3;
     transform: scale(1.1);
 }
+
+
+
+
+

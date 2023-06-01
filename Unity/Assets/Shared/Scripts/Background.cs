@@ -2,7 +2,7 @@ using System.Numerics;
 using UnityEngine;
 using Vector2 = UnityEngine.Vector2;
 
-namespace RMC.LevelUpAfrica
+namespace RMC.LevelUpAfrica.Examples
 {
     //  Namespace Properties ------------------------------
 

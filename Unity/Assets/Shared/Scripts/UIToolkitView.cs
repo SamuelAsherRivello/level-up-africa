@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UIElements;
 
-namespace RMC.LevelUpAfrica
+namespace RMC.LevelUpAfrica.Examples
 {
     //  Namespace Properties ------------------------------
 

@@ -2,7 +2,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace RMC.LevelUpAfrica
+namespace RMC.LevelUpAfrica.Examples
 {
     //  Event Class ---------------------------------------
     public class RocketUnityEvent : UnityEvent<Rocket> {}

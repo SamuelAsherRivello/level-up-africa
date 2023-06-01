@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
-namespace RMC.LevelUpAfrica
+namespace RMC.LevelUpAfrica.Examples
 {
     /// <summary>
     /// Replace with comments...
@@ -65,6 +65,7 @@ namespace RMC.LevelUpAfrica
         
         private Vector2 _movement = new Vector2();
         private int _points = 100;
+        private int _rocketSpawnpointIndex = 0;
         
         //  Unity Methods ---------------------------------
         
@@ -119,10 +120,17 @@ namespace RMC.LevelUpAfrica
             {
                 // Play Sound
                 AudioManager.Instance.PlayAudioClip("Rocket"); 
+                
+                // Launch Rocket from left wing or right wing
+                if (++_rocketSpawnpointIndex > _ship.RocketSpawnpoints.Count-1)
+                {
+                    _rocketSpawnpointIndex = 0;
+                }
                     
                 // Position new rocket
-                Quaternion newRotation = Quaternion.Euler(-90, 0, 0);
-                Vector3 newPosition = _ship.RocketSpawnpoint.transform.position;
+                Quaternion newRotation = Quaternion.Euler(-0, 0, 0);
+                RocketSpawnpoint rocketSpawnpoint = _ship.RocketSpawnpoints[_rocketSpawnpointIndex];
+                Vector3 newPosition = rocketSpawnpoint.transform.position;
                 
                 // Create new rocket
                 Rocket rocket = Instantiate(_rocketPrefab, newPosition, newRotation);

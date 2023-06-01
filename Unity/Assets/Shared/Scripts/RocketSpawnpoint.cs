@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace RMC.LevelUpAfrica
+namespace RMC.LevelUpAfrica.Examples
 {
     /// <summary>
     /// Replace with comments...

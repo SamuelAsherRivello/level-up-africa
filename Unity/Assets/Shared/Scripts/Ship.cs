@@ -1,6 +1,7 @@
+using System.Collections.Generic;
 using UnityEngine;
 
-namespace RMC.LevelUpAfrica
+namespace RMC.LevelUpAfrica.Examples
 {
     /// <summary>
     /// Replace with comments...
@@ -11,17 +12,17 @@ namespace RMC.LevelUpAfrica
 
         //  Properties ------------------------------------
 
-        public RocketSpawnpoint RocketSpawnpoint 
+        public List<RocketSpawnpoint> RocketSpawnpoints
         {
             get
             {
-                return _rocketSpawnpoint;
+                return _rocketSpawnpoints;
             }
         }
 
         //  Fields ----------------------------------------
         [SerializeField] 
-        private RocketSpawnpoint _rocketSpawnpoint;
+        private List<RocketSpawnpoint> _rocketSpawnpoints;
 
         
         //  Unity Methods ---------------------------------

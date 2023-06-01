@@ -1,5 +1,0 @@
-<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <ui:VisualElement name="Contents" style="flex-grow: 1; background-color: rgb(107, 162, 255); margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0;">
-        <ui:VisualElement name="Card" style="flex-grow: 1; background-color: rgb(255, 255, 255); -unity-background-image-tint-color: rgb(255, 255, 255); margin-left: 10px; margin-right: 10px; margin-top: 10px; margin-bottom: 10px; background-image: url(&apos;project://database/Assets/Examples/More/Example_UIToolkit/Marvel_Snap_Card_Black_Bolt.png?fileID=21300000&amp;guid=ba534b1731900d641b1baf4b4aa61eb6&amp;type=3#Marvel_Snap_Card_Black_Bolt&apos;);" />
-    </ui:VisualElement>
-</ui:UXML>

@@ -1,0 +1,6 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Examples/More/UIToolkit/Example_UIToolkit_Card/asdf.uss?fileID=7433441132597879392&amp;guid=464c9ec26dac6f049a1b161f26d710cc&amp;type=3#asdf" />
+    <ui:VisualElement name="Contents" class="Contents">
+        <ui:VisualElement name="Card" class="Card" />
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,19 @@
+.Contents {
+    flex-grow: 1;
+    background-color: rgb(107, 162, 255);
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.Card {
+    flex-grow: 1;
+    background-color: rgb(255, 255, 255);
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-image: url('project://database/Assets/Examples/More/UIToolkit/Example_UIToolkit_Card/UIToolkit_Card_Sprite.png?fileID=21300000&guid=ba534b1731900d641b1baf4b4aa61eb6&type=3#UIToolkit_Card_Sprite');
+}

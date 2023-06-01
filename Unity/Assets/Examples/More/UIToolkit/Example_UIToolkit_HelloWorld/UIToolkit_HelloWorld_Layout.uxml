@@ -1,0 +1,10 @@
+
+
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Examples/More/UIToolkit/Example_UIToolkit_HelloWorld/UIToolkit_HelloWorld_Styles.uss?fileID=7433441132597879392&amp;guid=cd80231fe098c4d4abf6f113e13600b5&amp;type=3#UIToolkit_HelloWorld_Styles" />
+    <ui:VisualElement name="Contents" class="Contents" style="flex-grow: 1; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; align-items: center; justify-content: center;">
+        <ui:Label tabindex="-1" text="Hello World!" display-tooltip-when-elided="true" name="titleText" class="titleText" />
+        <ui:Label tabindex="-1" text="Loaded" display-tooltip-when-elided="true" name="statusText" class="statusText" />
+        <ui:Button text="Click Me" display-tooltip-when-elided="true" name="clickMeButton" class="button" />
+    </ui:VisualElement>
+</ui:UXML>
