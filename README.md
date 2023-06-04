@@ -17,11 +17,11 @@ This **Unity Project** is featured in the following YouTube video playlist.
 
 <table>
 <tr>
-<th>Level Up Africa - Unity Game Dev - Playlist</th>
+<th>Level Up Africa - Unity Game Dev</th>
 </tr>
 <tr>
 <td>
-<a href="https://bit.ly/level-up-africa-unity-game-dev-playlist"><img width="500" src="./Unity/Assets/Documentation/Images/level-up-africa.png" /></a>
+<a href="https://bit.ly/level-up-africa-unity-game-dev-playlist"><img width="500" src="https://i3.ytimg.com/vi/8Yui2TWH7tE/maxresdefault.jpg" /></a>
 </td>
 </tr>
 </table>
