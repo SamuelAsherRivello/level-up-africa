@@ -1,0 +1,54 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Examples/More/UIToolkit/Example_UIToolkit_Flex/Example_UIToolkit_Flex.uss?fileID=7433441132597879392&amp;guid=307d8d85252b9b842869ef098ac80839&amp;type=3#Example_UIToolkit_Flex" />
+    <ui:VisualElement name="screen" class="screen">
+        <ui:VisualElement name="instructions" class="instructions" style="color: rgb(255, 255, 255);">
+            <ui:Label tabindex="-1" text="Demo Of: Shrink, Grow, Width, Height" display-tooltip-when-elided="true" class="label" />
+        </ui:VisualElement>
+        <ui:VisualElement name="example">
+            <ui:VisualElement name="row" class="row">
+                <ui:VisualElement name="column" class="column" style="background-color: rgb(154, 80, 86); flex-shrink: 0; flex-grow: 0;">
+                    <ui:Label tabindex="-1" text="(S=0,G=0)" display-tooltip-when-elided="true" class="label" />
+                </ui:VisualElement>
+                <ui:VisualElement name="column" class="column" style="background-color: rgb(78, 149, 88); flex-shrink: 0; flex-grow: 0;">
+                    <ui:Label tabindex="-1" text="(S=0,G=0)" display-tooltip-when-elided="true" class="label" />
+                </ui:VisualElement>
+                <ui:VisualElement name="column" class="column" style="background-color: rgb(68, 75, 132); flex-shrink: 0; flex-grow: 0;">
+                    <ui:Label tabindex="-1" text="(S=0,G=0)" display-tooltip-when-elided="true" class="label" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="row" class="row">
+                <ui:VisualElement name="column" class="column" style="background-color: rgb(154, 80, 86); flex-shrink: 0;">
+                    <ui:Label tabindex="-1" text="(S=0,G=1)" display-tooltip-when-elided="true" class="label" />
+                </ui:VisualElement>
+                <ui:VisualElement name="column" class="column" style="background-color: rgb(78, 149, 88); flex-shrink: 0;">
+                    <ui:Label tabindex="-1" text="(S=0,G=1)" display-tooltip-when-elided="true" class="label" />
+                </ui:VisualElement>
+                <ui:VisualElement name="column" class="column" style="background-color: rgb(68, 75, 132); flex-shrink: 0;">
+                    <ui:Label tabindex="-1" text="(S=0,G=1)" display-tooltip-when-elided="true" class="label" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="row" class="row">
+                <ui:VisualElement name="column" class="column" style="background-color: rgb(154, 80, 86);">
+                    <ui:Label tabindex="-1" text="(S=1,G=1)" display-tooltip-when-elided="true" class="label" />
+                </ui:VisualElement>
+                <ui:VisualElement name="column" class="column" style="background-color: rgb(78, 149, 88);">
+                    <ui:Label tabindex="-1" text="(S=1,G=1)" display-tooltip-when-elided="true" class="label" />
+                </ui:VisualElement>
+                <ui:VisualElement name="column" class="column" style="background-color: rgb(68, 75, 132);">
+                    <ui:Label tabindex="-1" text="(S=1,G=1)" display-tooltip-when-elided="true" class="label" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="row" class="row">
+                <ui:VisualElement name="column" class="column" style="background-color: rgb(154, 80, 86); flex-grow: 0;">
+                    <ui:Label tabindex="-1" text="(S=1,G=0)" display-tooltip-when-elided="true" class="label" />
+                </ui:VisualElement>
+                <ui:VisualElement name="column" class="column" style="background-color: rgb(78, 149, 88); flex-grow: 0;">
+                    <ui:Label tabindex="-1" text="(S=1,G=0)" display-tooltip-when-elided="true" class="label" />
+                </ui:VisualElement>
+                <ui:VisualElement name="column" class="column" style="background-color: rgb(68, 75, 132); flex-grow: 0;">
+                    <ui:Label tabindex="-1" text="(S=1,G=0)" display-tooltip-when-elided="true" class="label" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

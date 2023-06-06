@@ -1,0 +1,37 @@
+.label {
+    -unity-text-align: middle-center;
+    font-size: 50px;
+}
+
+.row {
+    flex-grow: 1;
+    background-color: rgba(0, 0, 0, 0);
+    flex-direction: row;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 800px;
+}
+
+.column {
+    flex-grow: 1;
+    background-color: rgb(0, 130, 17);
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 300px;
+    height: 300px;
+}
+
+.screen {
+    flex-grow: 1;
+    background-color: rgb(0, 0, 0);
+    flex-direction: column;
+}
+
+.instructions {
+}
