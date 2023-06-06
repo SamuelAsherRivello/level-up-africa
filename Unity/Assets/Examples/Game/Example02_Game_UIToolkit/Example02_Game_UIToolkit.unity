@@ -333,7 +333,7 @@ GameObject:
   - component: {fileID: 1409149260}
   - component: {fileID: 1409149261}
   m_Layer: 0
-  m_Name: Example03_Game_UIToolkit
+  m_Name: Example02_Game_UIToolkit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

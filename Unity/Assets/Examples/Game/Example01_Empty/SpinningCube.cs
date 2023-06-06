@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace RMC.LevelUpAfrica.Examples
+namespace RMC.LevelUpAfrica.Examples.Game.Example01_Empty
 {
     public class SpinningCube: MonoBehaviour
     {

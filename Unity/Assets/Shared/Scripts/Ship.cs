@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace RMC.LevelUpAfrica.Examples
+namespace RMC.LevelUpAfrica.Examples.Shared
 {
     /// <summary>
     /// Replace with comments...

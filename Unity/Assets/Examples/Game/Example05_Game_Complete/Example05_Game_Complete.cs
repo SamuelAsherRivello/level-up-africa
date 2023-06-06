@@ -1,15 +1,16 @@
 using DG.Tweening;
 using RMC.Core.Audio;
+using RMC.LevelUpAfrica.Examples.Shared;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
-namespace RMC.LevelUpAfrica.Examples
+namespace RMC.LevelUpAfrica.Examples.Game.Example02_Game_Complete
 {
     /// <summary>
     /// Replace with comments...
     /// </summary>
-    public class Example02_Game_CSharpScripting : MonoBehaviour
+    public class Example05_Game_Complete : MonoBehaviour
     {
         //  Events ----------------------------------------
 

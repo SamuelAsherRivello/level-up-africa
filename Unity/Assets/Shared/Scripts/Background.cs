@@ -1,8 +1,6 @@
-using System.Numerics;
 using UnityEngine;
-using Vector2 = UnityEngine.Vector2;
 
-namespace RMC.LevelUpAfrica.Examples
+namespace RMC.LevelUpAfrica.Examples.Shared
 {
     //  Namespace Properties ------------------------------
 

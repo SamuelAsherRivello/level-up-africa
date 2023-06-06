@@ -1,11 +1,12 @@
+using RMC.LevelUpAfrica.Examples.Shared;
 using UnityEngine;
 
-namespace RMC.LevelUpAfrica.Examples
+namespace RMC.LevelUpAfrica.Examples.Game.Example03_Game_UIToolkit
 {
     /// <summary>
     /// Replace with comments...
     /// </summary>
-    public class Example03_Game_UIToolkit : MonoBehaviour
+    public class Example02_Game_UIToolkit : MonoBehaviour
     {
         //  Events ----------------------------------------
 
