@@ -3,13 +3,28 @@
 
 This repo includes Unity Demos. **Level Up Africa offers** the "Unity Game Development Training" program for students in the African continent.
 
-<img width="300" src="./Unity/Assets/Documentation/Images/level-up-africa.png" alt="Best Practices">
+
 
 **Getting Started**
 1. Download this repo (*.zip or *.git)
 1. Download the [Unity Editor](https://store.unity.com/#plans-individual)
 1. Open this repo in the Unity Editor
 1. Enjoy
+
+### Videos
+
+This **Unity Project** is featured in the following YouTube video playlist.
+
+<table>
+<tr>
+<th>Level Up Africa - Unity Game Dev</th>
+</tr>
+<tr>
+<td>
+<a href="https://bit.ly/level-up-africa-unity-game-dev-playlist"><img width="500" src="https://i3.ytimg.com/vi/8Yui2TWH7tE/maxresdefault.jpg" /></a>
+</td>
+</tr>
+</table>
 
 
 # Overview
