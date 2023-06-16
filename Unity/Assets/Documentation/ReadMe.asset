@@ -88,48 +88,48 @@ MonoBehaviour:
     MenuItemName: 
     MenuItemPath: 
   - TextHeading: Getting Started
-    TextSubheading: 
+    TextSubheading: Space Shooter
     TextBody: Demonstration of an empty Unity scene.
     LinkName: 
     LinkUrl: 
-    PingObjectName: Example01_Empty
+    PingObjectName: Example01_Game_Empty
     PingObjectGuid: 9814172bf91dcb440a1aeac08d98f3d3
     MenuItemName: 
     MenuItemPath: 
   - TextHeading: 
     TextSubheading: 
-    TextBody: Demonstration of an simple game with C# scripting.
+    TextBody: Demonstration of an simple game with C# scripting
     LinkName: 
     LinkUrl: 
-    PingObjectName: Example02_Game_CSharpScripting
-    PingObjectGuid: ce4706fef0fa3404d84f6997bbd41bf7
+    PingObjectName: Example02_Game_UIToolkit
+    PingObjectGuid: 370560ec067931e409043c63c87bf499
     MenuItemName: 
     MenuItemPath: 
   - TextHeading: 
     TextSubheading: 
-    TextBody: Demonstration of an simple game with visual scripting.
+    TextBody: Demonstration of a custom shader with ShaderGraph
     LinkName: 
     LinkUrl: 
-    PingObjectName: Example03_Game_VisualScripting
-    PingObjectGuid: 02cfb5a376ae39f4e8c16b42d06e4b73
-    MenuItemName: 
-    MenuItemPath: 
-  - TextHeading: 
-    TextSubheading: 
-    TextBody: Demonstration of a custom shader with ShaderGraph.
-    LinkName: 
-    LinkUrl: 
-    PingObjectName: Example04_ShaderGraph
+    PingObjectName: Example03_Game_ShaderGraph
     PingObjectGuid: 1b5bc838416f2eb49b571b922d2a2203
     MenuItemName: 
     MenuItemPath: 
   - TextHeading: 
     TextSubheading: 
-    TextBody: Demonstration of an empty Unity scene.
+    TextBody: Demonstration of a visual effect with VFX Graph
     LinkName: 
     LinkUrl: 
-    PingObjectName: Demonstration of a visual effect with VFX Graph.
+    PingObjectName: Example04_Game_VFXGraph
     PingObjectGuid: 81a6ac839e9940f4e8d4bdb130bdd0ac
+    MenuItemName: 
+    MenuItemPath: 
+  - TextHeading: 
+    TextSubheading: 
+    TextBody: Demonstration of the complete game
+    LinkName: 
+    LinkUrl: 
+    PingObjectName: Example05_Game_Complete
+    PingObjectGuid: ce4706fef0fa3404d84f6997bbd41bf7
     MenuItemName: 
     MenuItemPath: 
   HasLoadedLayout: 0
