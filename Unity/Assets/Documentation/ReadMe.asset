@@ -132,4 +132,33 @@ MonoBehaviour:
     PingObjectGuid: ce4706fef0fa3404d84f6997bbd41bf7
     MenuItemName: 
     MenuItemPath: 
+  - TextHeading: 
+    TextSubheading: Roll A Ball
+    TextBody: Demonstration of a complete, basic game.
+    LinkName: 
+    LinkUrl: 
+    PingObjectName: Example01_Game_Complete_Basic_NonDots
+    PingObjectGuid: 2d2b92590911b444eb3768898a37a90a
+    MenuItemName: 
+    MenuItemPath: 
+  - TextHeading: 
+    TextSubheading: 
+    TextBody: Demonstration of a complete game with Mini MVCS Architecture, UI Toolkit,
+      and Input System.
+    LinkName: 
+    LinkUrl: 
+    PingObjectName: Example02_Game_Complete_MiniMvcs_NonDots
+    PingObjectGuid: 6203d1ef071cd54448cf78323a1ae785
+    MenuItemName: 
+    MenuItemPath: 
+  - TextHeading: 
+    TextSubheading: 
+    TextBody: Demonstration of a complete game with DOTS, Mini MVCS Architecture,
+      UI Toolkit, and Input System.
+    LinkName: 
+    LinkUrl: 
+    PingObjectName: Example03_Game_Complete_MiniMvcs_Dots
+    PingObjectGuid: 67eaa92e96572f645b971d4a44be628a
+    MenuItemName: 
+    MenuItemPath: 
   HasLoadedLayout: 0
