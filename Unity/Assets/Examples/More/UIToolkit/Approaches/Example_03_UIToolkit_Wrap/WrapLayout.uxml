@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="StatsBar" src="project://database/Assets/Examples/More/UIToolkit/Approaches/Example_03_UIToolkit_Wrap/StatsBar.uxml?fileID=9197481963319205126&amp;guid=69e6066e21454724aa0027baf1d9731a&amp;type=3#StatsBar" />
+    <Style src="project://database/Assets/Examples/More/UIToolkit/Approaches/Example_03_UIToolkit_Wrap/WrapLayoutStyles.uss?fileID=7433441132597879392&amp;guid=489a67b736650134aaa201928816ae24&amp;type=3#WrapLayoutStyles" />
+    <ui:VisualElement name="Screen" class="screen">
+        <ui:VisualElement name="Content" class="content">
+            <ui:Instance template="StatsBar" name="StatsBar" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
