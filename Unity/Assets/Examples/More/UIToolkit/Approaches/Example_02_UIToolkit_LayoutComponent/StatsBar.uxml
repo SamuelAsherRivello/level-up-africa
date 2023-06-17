@@ -1,0 +1,18 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/Examples/More/UIToolkit/Approaches/Example_02_UIToolkit_LayoutComponent/StatsBarStyles.uss?fileID=7433441132597879392&amp;guid=29bc45f1b53c9b94baa3ca1123f7e137&amp;type=3#StatsBarStyles" />
+    <ui:VisualElement name="StatsBar" class="stats-bar">
+        <ui:VisualElement name="Upper" class="upper">
+            <ui:Label tabindex="-1" text="Health" display-tooltip-when-elided="true" name="TitleLabel" class="title-label" style="margin-bottom: -10px;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="Lower" class="lower">
+            <ui:VisualElement name="Bar" class="bar">
+                <ui:VisualElement name="BarBackground" class="bar-background" />
+                <ui:VisualElement name="BarFill" class="bar-fill" />
+                <ui:VisualElement name="BarForeground" class="bar-foreground">
+                    <ui:Label tabindex="-1" text="100%" display-tooltip-when-elided="true" name="DetailsLabel" class="details-label" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="Icon" class="icon" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

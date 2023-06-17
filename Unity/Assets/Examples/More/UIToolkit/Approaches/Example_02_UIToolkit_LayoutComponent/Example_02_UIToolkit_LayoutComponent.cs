@@ -129,7 +129,5 @@ namespace RMC.LevelUpAfrica.Examples.More.UIToolkit.Approaches.Example_02_UITool
                     UpdateValue(nextValue);
                 });
         }
-
-
     }
 }
