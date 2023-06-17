@@ -87,24 +87,17 @@ namespace RMC.LevelUpAfrica.Examples.More.UIToolkit.Approaches.Example_03_UITool
             _icon.RegisterCallback<ClickEvent>(Icon_OnClicked);
             
             // Defaults
-            SetValueAsync(50);
-
-            //Instructions
-            Debug.Log("Click the StatsBar Icon to change health.");
+            Value = 0;
+            Title = $"Health";
+            Details = $"{Value:0}%";   
 
         }
 
         //  Methods ---------------------------------------
-        public async void SetValueAsync(float nextValue)
+        public async void SetValueAsync(float newValue)
         {
             float fromValue = Value;
-            float toValue = fromValue + 10;
             int durationMilliseconds = 500; 
-            
-            if (toValue >= 100)
-            {
-                toValue = 0;
-            }
 
             //LERP: If we are already changing the value, cancel
             //the old change and use only the new change.
@@ -117,18 +110,18 @@ namespace RMC.LevelUpAfrica.Examples.More.UIToolkit.Approaches.Example_03_UITool
             //Update the value over time for demonstration purposes
             await LerpHelper.LerpValueAsync(
                 fromValue, 
-                toValue, 
+                newValue, 
                 durationMilliseconds, 
                 _cancellationToken,
-                (nextValue2) =>
+                (nextValue) =>
                 {
-                    Value = nextValue2;
+                    Value = nextValue;
                     Title = $"Health";
                     Details = $"{Value:0}%";   
                 });
         }
-
         
+
         //  Event Handlers --------------------------------
         private async void Icon_OnClicked(ClickEvent evt)
         {

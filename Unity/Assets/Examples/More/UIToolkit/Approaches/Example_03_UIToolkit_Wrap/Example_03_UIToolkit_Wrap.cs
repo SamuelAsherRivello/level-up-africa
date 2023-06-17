@@ -37,7 +37,7 @@ namespace RMC.LevelUpAfrica.Examples.More.UIToolkit.Approaches.Example_03_UITool
             _statsBarWrapper.OnClicked.AddListener(StatsBarWrapper_OnClicked);
             
             // Defaults
-            _statsBarWrapper.Value = 50;
+            _statsBarWrapper.Value = 50; //Change value instantly
 
             //Instructions
             Debug.Log("Click the StatsBar Icon to change health.");
@@ -56,8 +56,8 @@ namespace RMC.LevelUpAfrica.Examples.More.UIToolkit.Approaches.Example_03_UITool
             {
                 nextValue = 0;
             }
-
-            _statsBarWrapper.SetValueAsync(nextValue);
+            
+            _statsBarWrapper.SetValueAsync(nextValue); //Change value gradually
         }
     }
 }
