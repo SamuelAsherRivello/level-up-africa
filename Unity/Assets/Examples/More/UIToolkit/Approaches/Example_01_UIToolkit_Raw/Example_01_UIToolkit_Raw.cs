@@ -1,6 +1,8 @@
+using System.Threading;
 using UnityEngine;
 using UnityEngine.UIElements;
 
+// ReSharper disable ArrangeAccessorOwnerBody
 namespace RMC.LevelUpAfrica.Examples.More.UIToolkit.Approaches.Example_01_UIToolkit_Raw
 {
     //  Namespace Properties ------------------------------
@@ -8,7 +10,7 @@ namespace RMC.LevelUpAfrica.Examples.More.UIToolkit.Approaches.Example_01_UITool
     //  Class Attributes ----------------------------------
 
     /// <summary>
-    /// Replace with comments...
+    /// Demonstrates a **RAW** approach to using UIToolkit.
     /// </summary>
     public class Example_01_UIToolkit_Raw : MonoBehaviour
     {
@@ -34,61 +36,100 @@ namespace RMC.LevelUpAfrica.Examples.More.UIToolkit.Approaches.Example_01_UITool
         {
             get
             {
-                return _title;
+                return _titleLabel.text;
             }
             set
             {
-                 _title = value;
-                
-                _titleLabel.text = _title;
+                _titleLabel.text = value;
             }
         }
 
+        public string Details
+        {
+            get
+            {
+                return _detailsLabel.text;
+            }
+            set
+            {
+    
+                _detailsLabel.text = value;
+            }
+        }
+        
 
         //  Fields ----------------------------------------
         [SerializeField]
         private UIDocument _uiDocument;
 
         private Label _titleLabel;
+        private Label _detailsLabel;
         private VisualElement _icon;
         private VisualElement _barFill;
         private float _value;
-        private string _title;
+        private CancellationTokenSource _cancellationToken;
 
         //  Unity Methods ---------------------------------
         protected void Start()
         {
+            // Query
             _titleLabel = _uiDocument.rootVisualElement.Q<Label>("TitleLabel");
+            _detailsLabel = _uiDocument.rootVisualElement.Q<Label>("DetailsLabel");
             _icon = _uiDocument.rootVisualElement.Q<VisualElement>("Icon");
             _barFill = _uiDocument.rootVisualElement.Q<VisualElement>("BarFill");
             
-            //
-            Value = 0;
-
-        }
-
-        protected void Update()
-        {
-            Value += 0.25f;
+            // Events
+            _icon.RegisterCallback<ClickEvent>(Icon_OnClicked);
             
-            if (Value >= 100)
-            {
-                Value = 0;
-            }
-            Title = $"Health: {Value:000}";
+            // Defaults
+            UpdateValue(50);
+
+            //Instructions
+            Debug.Log("Click the StatsBar Icon to change health.");
+
         }
-        
+
         //  Methods ---------------------------------------
-        public string SamplePublicMethod(string message)
+        private void UpdateValue(float nextValue)
         {
-            return message;
+            Value = nextValue;
+            Title = $"Health";
+            Details = $"{Value:0}%";    
         }
 
-
+        
         //  Event Handlers --------------------------------
-        public void Target_OnCompleted(string message)
+        private async void Icon_OnClicked(ClickEvent evt)
         {
+            float fromValue = Value;
+            float toValue = fromValue + 10;
+            int durationMilliseconds = 500; 
+            
+            if (toValue >= 100)
+            {
+                toValue = 0;
+            }
 
+            //LERP: If we are already changing the value, cancel
+            //the old change and use only the new change.
+            if (_cancellationToken != null)
+            {
+                _cancellationToken.Cancel();
+            }
+            _cancellationToken = new CancellationTokenSource();
+            
+            //Update the value over time for demonstration purposes
+            await LerpHelper.LerpValueAsync(
+                fromValue, 
+                toValue, 
+                durationMilliseconds, 
+                _cancellationToken,
+                (nextValue) =>
+                {
+                    UpdateValue(nextValue);
+                });
         }
+
+
     }
 }
