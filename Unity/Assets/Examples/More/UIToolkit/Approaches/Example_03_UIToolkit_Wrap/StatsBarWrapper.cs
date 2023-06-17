@@ -1,4 +1,5 @@
 using System.Threading;
+using InstAnime;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UIElements;
@@ -97,7 +98,7 @@ namespace RMC.LevelUpAfrica.Examples.More.UIToolkit.Approaches.Example_03_UITool
         public async void SetValueAsync(float newValue)
         {
             float fromValue = Value;
-            int durationMilliseconds = 500; 
+            float durationSeconds = 0.5f; 
 
             //LERP: If we are already changing the value, cancel
             //the old change and use only the new change.
@@ -108,17 +109,18 @@ namespace RMC.LevelUpAfrica.Examples.More.UIToolkit.Approaches.Example_03_UITool
             _cancellationToken = new CancellationTokenSource();
             
             //Update the value over time for demonstration purposes
-            await LerpHelper.LerpValueAsync(
-                fromValue, 
-                newValue, 
-                durationMilliseconds, 
-                _cancellationToken,
+            InstantAnimator.AnimateAsync<float>(
+                fromValue,
+                newValue,
+                durationSeconds,
                 (nextValue) =>
                 {
                     Value = nextValue;
                     Title = $"Health";
                     Details = $"{Value:0}%";   
-                });
+                },
+                _cancellationToken.Token, 
+                UpdateMode.Unscaled);
         }
         
 

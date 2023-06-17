@@ -1,4 +1,5 @@
 using System.Threading;
+using InstAnime;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -99,11 +100,11 @@ namespace RMC.LevelUpAfrica.Examples.More.UIToolkit.Approaches.Example_02_UITool
 
         
         //  Event Handlers --------------------------------
-        private async void Icon_OnClicked(ClickEvent evt)
+        private void Icon_OnClicked(ClickEvent evt)
         {
             float fromValue = Value;
             float toValue = fromValue + 10;
-            int durationMilliseconds = 500; 
+            float durationSeconds = 0.5f; 
             
             if (toValue >= 100)
             {
@@ -119,15 +120,17 @@ namespace RMC.LevelUpAfrica.Examples.More.UIToolkit.Approaches.Example_02_UITool
             _cancellationToken = new CancellationTokenSource();
             
             //Update the value over time for demonstration purposes
-            await LerpHelper.LerpValueAsync(
-                fromValue, 
-                toValue, 
-                durationMilliseconds, 
-                _cancellationToken,
+            InstantAnimator.AnimateAsync<float>(
+                fromValue,
+                toValue,
+                durationSeconds,
                 (nextValue) =>
                 {
                     UpdateValue(nextValue);
-                });
+                },
+                _cancellationToken.Token, 
+                UpdateMode.Unscaled);
+       
         }
     }
 }
