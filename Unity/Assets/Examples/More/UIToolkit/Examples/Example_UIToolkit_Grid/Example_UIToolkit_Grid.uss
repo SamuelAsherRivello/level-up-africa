@@ -1,7 +1,7 @@
 .label {
     -unity-text-align: middle-center;
     font-size: 89px;
-    -unity-font-definition: url('project://database/Assets/3rdParty/Unity/UI%20Toolkit%20Random%20Assets/UI%20Toolkit%20Random%20Assets/Fonts/ChelaOne/ChelaOne-Regular%20SDF%201.asset?fileID=11400000&guid=f45e05faf094fc842b866d0980fc655c&type=2#ChelaOne-Regular SDF 1');
+    -unity-font-definition: url('project://database/Assets/3rdParty/Unity/UI%20Toolkit%20Random%20Assets/UI%20Toolkit%20Random%20Assets/Fonts/ChelaOne/ChelaOne-Regular.asset?fileID=11400000&guid=f45e05faf094fc842b866d0980fc655c&type=2#ChelaOne-Regular');
     margin-right: 50%;
     color: rgb(0, 0, 0);
     -unity-text-outline-width: 2px;
@@ -22,7 +22,7 @@
 .example {
     flex-grow: 1;
     background-color: rgb(0, 0, 0);
-    background-image: url('project://database/Assets/Examples/More/UIToolkit/Examples/Example_UIToolkit_Grid/Example_UIToolkit_Grid_BG.png?fileID=21300000&guid=fad83192058944a418af958868ba3243&type=3#Example_UIToolkit_Grid_BG');
+    background-image: url('project://database/Assets/Examples/More/UIToolkit/Examples/Example_UIToolkit_Grid/Art/Sprites/Example_UIToolkit_Grid_BG.png?fileID=21300000&guid=fad83192058944a418af958868ba3243&type=3#Example_UIToolkit_Grid_BG');
     -unity-background-scale-mode: scale-and-crop;
     flex-direction: row;
 }
@@ -30,7 +30,6 @@
 .tile-grid {
     flex-grow: 1;
     background-color: rgba(0, 0, 0, 0);
-    flex-wrap: wrap;
     background-image: none;
     -unity-background-scale-mode: stretch-to-fill;
     padding-left: 0;
@@ -74,7 +73,7 @@
     flex-grow: 1;
     background-color: rgba(0, 0, 0, 0);
     flex-wrap: wrap;
-    background-image: url('project://database/Assets/Examples/More/UIToolkit/Examples/Example_UIToolkit_Grid/Example_UIToolkit_Grid_FG.png?fileID=21300000&guid=313954dcabe57fc448b244214128ddd9&type=3#Example_UIToolkit_Grid_FG');
+    background-image: url('project://database/Assets/Examples/More/UIToolkit/Examples/Example_UIToolkit_Grid/Art/Sprites/Example_UIToolkit_Grid_FG.png?fileID=21300000&guid=313954dcabe57fc448b244214128ddd9&type=3#Example_UIToolkit_Grid_FG');
     -unity-background-scale-mode: stretch-to-fill;
     -unity-background-image-tint-color: rgb(200, 200, 200);
     -unity-slice-scale: 0.5px;
@@ -87,4 +86,5 @@
     padding-bottom: 50px;
     flex-direction: row;
     flex-wrap: wrap;
+    overflow: hidden;
 }
