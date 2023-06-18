@@ -1,0 +1,6 @@
+Source Url: 
+* https://docs.unity3d.com/Packages/com.unity.visualeffectgraph@14.0/manual/sample-content.html
+
+Changelog: 
+* Some assets may have been removed to reduce file size
+* Moved to /Assets/3rdParty/
