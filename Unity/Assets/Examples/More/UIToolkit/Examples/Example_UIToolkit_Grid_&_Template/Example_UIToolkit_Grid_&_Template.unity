@@ -229,7 +229,7 @@ GameObject:
   - component: {fileID: 578383853}
   - component: {fileID: 578383852}
   m_Layer: 0
-  m_Name: Example_UIToolkit_Grid
+  m_Name: Example_UIToolkit_Grid_&_Template
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

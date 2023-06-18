@@ -1,0 +1,5 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="Tile" class="tile" style="background-image: url(&apos;project://database/Assets/3rdParty/CaptainCatSparrow/ArmorAndJewelry/ArmorAndJewelry/Icons/BodyArmor/BodyArmor_1.png?fileID=21300000&amp;guid=603e026921ee6c44ab5c48b149bb31e9&amp;type=3#BodyArmor_1&apos;); -unity-background-scale-mode: scale-to-fit; flex-basis: 100%; justify-content: flex-end;">
+        <ui:Label tabindex="-1" text="Label" display-tooltip-when-elided="true" name="TitleLabel" style="align-items: center; justify-content: center; align-self: center; -unity-font-definition: url(&apos;project://database/Assets/Examples/More/UIToolkit/Approaches/Shared/Art/Fonts/verdana%20SDF.asset?fileID=11400000&amp;guid=a075d037fe98137428ce0c2a94817b4e&amp;type=2#verdana SDF&apos;); font-size: 14px; -unity-text-align: lower-center; background-color: rgba(0, 0, 0, 0.78); color: rgb(255, 255, 255);" />
+    </ui:VisualElement>
+</ui:UXML>

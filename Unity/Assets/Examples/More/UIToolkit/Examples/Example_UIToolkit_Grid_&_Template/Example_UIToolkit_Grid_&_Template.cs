@@ -9,7 +9,7 @@ namespace RMC.LevelUpAfrica.Examples.More.UIToolkit.Example_UIToolkit_Grid
     /// <summary>
     /// Replace with comments...
     /// </summary>
-    public class Example_UIToolkit_Grid : MonoBehaviour
+    public class Example_UIToolkit_Grid_Template : MonoBehaviour
     {
         //  Events ----------------------------------------
 
@@ -41,7 +41,7 @@ namespace RMC.LevelUpAfrica.Examples.More.UIToolkit.Example_UIToolkit_Grid
             List<VisualElement> _tiles = 
                 _uiDocument.rootVisualElement.Query<VisualElement>("Tile").ToList();
 
-            _uiDocument.rootVisualElement.RegisterCallback<ClickEvent>(Tile_OnClicked);
+
             
             for  (int i = 0; i < _tiles.Count; i++)
             {
@@ -50,7 +50,15 @@ namespace RMC.LevelUpAfrica.Examples.More.UIToolkit.Example_UIToolkit_Grid
                 int iconSpriteIndex = i % _iconSprites.Count;
                 Sprite sprite = _iconSprites[iconSpriteIndex];
                 tile.style.backgroundImage = new StyleBackground(sprite);
-         
+                
+                //
+                tile.RegisterCallback<ClickEvent>(Tile_OnClicked);
+
+                //
+                string spriteName = tile.style.backgroundImage.value.sprite.name;
+                Label tileLabel = tile.Q<Label>();
+                tileLabel.text = $"{spriteName}";
+
             }
         }
 
@@ -61,8 +69,9 @@ namespace RMC.LevelUpAfrica.Examples.More.UIToolkit.Example_UIToolkit_Grid
         //  Event Handlers --------------------------------
         private void Tile_OnClicked(ClickEvent evt)
         {
-            VisualElement visualElement = (VisualElement) evt.target;
-            Debug.Log($"Clicked {visualElement.style.backgroundImage.value.sprite.name}");
+            VisualElement visualElement = (VisualElement) evt.currentTarget;
+            string spriteName = visualElement.style.backgroundImage.value.sprite.name;
+            Debug.Log($"Clicked {spriteName}");
         }
     }
 }
