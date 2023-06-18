@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UIElements;
 
+//ReSharper disable PrivateFieldCanBeConvertedToLocalVariable
 // ReSharper disable ArrangeAccessorOwnerBody
 namespace RMC.LevelUpAfrica.Examples.More.UIToolkit.Approaches.Example_03_UIToolkit_Wrap
 {
@@ -18,7 +19,7 @@ namespace RMC.LevelUpAfrica.Examples.More.UIToolkit.Approaches.Example_03_UITool
     public class StatsBarWrapper 
     {
         //  Events ----------------------------------------
-        public StatsBarWrapperUnityEvent OnClicked = new StatsBarWrapperUnityEvent();
+        public readonly StatsBarWrapperUnityEvent OnClicked = new StatsBarWrapperUnityEvent();
 
         //  Properties ------------------------------------
         public float Value
@@ -63,11 +64,9 @@ namespace RMC.LevelUpAfrica.Examples.More.UIToolkit.Approaches.Example_03_UITool
         
 
         //  Fields ----------------------------------------
-        [SerializeField]
-        private VisualElement _visualElement;
-
-        private Label _titleLabel;
-        private Label _detailsLabel;
+        private readonly VisualElement _visualElement;
+        private readonly Label _titleLabel;
+        private readonly Label _detailsLabel;
         private VisualElement _icon;
         private VisualElement _barFill;
         private float _value;
@@ -95,7 +94,7 @@ namespace RMC.LevelUpAfrica.Examples.More.UIToolkit.Approaches.Example_03_UITool
         }
 
         //  Methods ---------------------------------------
-        public async void SetValueAsync(float newValue)
+        public void SetValueAsync(float newValue)
         {
             float fromValue = Value;
             float durationSeconds = 0.5f; 
@@ -109,7 +108,7 @@ namespace RMC.LevelUpAfrica.Examples.More.UIToolkit.Approaches.Example_03_UITool
             _cancellationToken = new CancellationTokenSource();
             
             //Update the value over time for demonstration purposes
-            InstantAnimator.AnimateAsync<float>(
+            InstantAnimator.AnimateAsync(
                 fromValue,
                 newValue,
                 durationSeconds,
@@ -125,7 +124,7 @@ namespace RMC.LevelUpAfrica.Examples.More.UIToolkit.Approaches.Example_03_UITool
         
 
         //  Event Handlers --------------------------------
-        private async void Icon_OnClicked(ClickEvent evt)
+        private void Icon_OnClicked(ClickEvent evt)
         {
             OnClicked.Invoke(this);
 

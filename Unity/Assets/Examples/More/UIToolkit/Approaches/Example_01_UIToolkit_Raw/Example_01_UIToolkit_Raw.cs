@@ -100,7 +100,7 @@ namespace RMC.LevelUpAfrica.Examples.More.UIToolkit.Approaches.Example_01_UITool
 
         
         //  Event Handlers --------------------------------
-        private async void Icon_OnClicked(ClickEvent evt)
+        private void Icon_OnClicked(ClickEvent evt)
         {
             float fromValue = Value;
             float toValue = fromValue + 10;
@@ -120,7 +120,7 @@ namespace RMC.LevelUpAfrica.Examples.More.UIToolkit.Approaches.Example_01_UITool
             _cancellationToken = new CancellationTokenSource();
             
             //Update the value over time for demonstration purposes
-            InstantAnimator.AnimateAsync<float>(
+            InstantAnimator.AnimateAsync(
                 fromValue, 
                 toValue, 
                 durationSeconds, 
