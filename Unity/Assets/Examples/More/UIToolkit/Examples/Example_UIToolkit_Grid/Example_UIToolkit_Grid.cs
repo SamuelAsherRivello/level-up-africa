@@ -35,10 +35,14 @@ namespace RMC.LevelUpAfrica.Examples.More.UIToolkit.Example_UIToolkit_Grid
         protected void Start()
         {
             Debug.Log($"{GetType().Name}.Start()");
+            
+            Debug.Log($"Click icons to see icon name.");
 
             List<VisualElement> _tiles = 
                 _uiDocument.rootVisualElement.Query<VisualElement>("Tile").ToList();
 
+            _uiDocument.rootVisualElement.RegisterCallback<ClickEvent>(Tile_OnClicked);
+            
             for  (int i = 0; i < _tiles.Count; i++)
             {
                 // Set Icon
@@ -46,12 +50,19 @@ namespace RMC.LevelUpAfrica.Examples.More.UIToolkit.Example_UIToolkit_Grid
                 int iconSpriteIndex = i % _iconSprites.Count;
                 Sprite sprite = _iconSprites[iconSpriteIndex];
                 tile.style.backgroundImage = new StyleBackground(sprite);
+         
             }
-
         }
+
+
 
         //  Methods ---------------------------------------
 
         //  Event Handlers --------------------------------
+        private void Tile_OnClicked(ClickEvent evt)
+        {
+            VisualElement visualElement = (VisualElement) evt.target;
+            Debug.Log($"Clicked {visualElement.style.backgroundImage.value.sprite.name}");
+        }
     }
 }

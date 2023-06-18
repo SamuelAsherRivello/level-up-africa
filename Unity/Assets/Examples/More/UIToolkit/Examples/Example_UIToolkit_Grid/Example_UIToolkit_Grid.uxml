@@ -20,7 +20,7 @@
                         <ui:VisualElement name="Tile" class="tile" style="background-image: url(&apos;project://database/Assets/3rdParty/CaptainCatSparrow/ArmorAndJewelry/ArmorAndJewelry/Icons/BodyArmor/BodyArmor_1.png?fileID=21300000&amp;guid=603e026921ee6c44ab5c48b149bb31e9&amp;type=3#BodyArmor_1&apos;); -unity-background-scale-mode: scale-to-fit;" />
                         <ui:VisualElement name="Tile" class="tile" style="background-image: url(&apos;project://database/Assets/3rdParty/CaptainCatSparrow/ArmorAndJewelry/ArmorAndJewelry/Icons/BodyArmor/BodyArmor_1.png?fileID=21300000&amp;guid=603e026921ee6c44ab5c48b149bb31e9&amp;type=3#BodyArmor_1&apos;); -unity-background-scale-mode: scale-to-fit;" />
                     </ui:VisualElement>
-                    <ui:VisualElement name="TileGridForeground" class="tile-grid-foreground layer" />
+                    <ui:VisualElement name="TileGridForeground" picking-mode="Ignore" class="tile-grid-foreground layer" />
                 </ui:VisualElement>
             </ui:VisualElement>
         </ui:VisualElement>
