@@ -1,0 +1,25 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Examples/More/UIToolkit/Examples/Example_UIToolkit_Grid/Example_UIToolkit_Grid.uss?fileID=7433441132597879392&amp;guid=28dde38c39478b849abc43e2ba1dba90&amp;type=3#Example_UIToolkit_Grid" />
+    <ui:VisualElement name="screen" class="screen" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+        <ui:VisualElement name="example" style="flex-grow: 1; background-color: rgb(0, 0, 0);">
+            <ui:VisualElement name="cell-tl" class="cell" style="flex-shrink: 0; flex-grow: 0; position: absolute; left: 0;">
+                <ui:Label tabindex="-1" text="TL" display-tooltip-when-elided="true" class="label" />
+            </ui:VisualElement>
+            <ui:VisualElement name="cell-tr" class="cell" style="flex-shrink: 0; flex-grow: 0; position: absolute; top: 0; left: auto; right: 0;">
+                <ui:Label tabindex="-1" text="TR" display-tooltip-when-elided="true" class="label" />
+            </ui:VisualElement>
+            <ui:VisualElement name="cell-bl" class="cell" style="flex-shrink: 0; flex-grow: 0; position: absolute; bottom: 0;">
+                <ui:Label tabindex="-1" text="BL" display-tooltip-when-elided="true" class="label" />
+            </ui:VisualElement>
+            <ui:VisualElement name="cell-br" class="cell" style="flex-shrink: 0; flex-grow: 0; position: absolute; top: auto; left: auto; right: 0; bottom: 0;">
+                <ui:Label tabindex="-1" text="BR" display-tooltip-when-elided="true" class="label" />
+            </ui:VisualElement>
+            <ui:VisualElement name="cell-cc" class="cell" style="flex-shrink: 0; flex-grow: 0; position: absolute; top: 50%; left: 50%; right: 50%; bottom: 50%; transform-origin: center; translate: -50% -50%;">
+                <ui:Label tabindex="-1" text="C" display-tooltip-when-elided="true" class="label" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="instructions" class="instructions" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); height: 100px; position: absolute; width: 100%; justify-content: center;">
+            <ui:Label tabindex="-1" text="Pin To Corners" display-tooltip-when-elided="true" class="label" style="color: rgb(255, 255, 255);" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
