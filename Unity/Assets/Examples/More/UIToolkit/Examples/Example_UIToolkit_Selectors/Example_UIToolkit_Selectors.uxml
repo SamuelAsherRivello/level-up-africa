@@ -1,0 +1,19 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Examples/More/UIToolkit/Examples/Example_UIToolkit_Selectors/Example_UIToolkit_Selectors.uss?fileID=7433441132597879392&amp;guid=73c8888051f5210408d6c907d8098976&amp;type=3#Example_UIToolkit_Selectors" />
+    <ui:VisualElement name="screen" class="screen">
+        <ui:VisualElement name="instructions" class="instructions" style="color: rgb(255, 255, 255); -unity-text-align: middle-center;">
+            <ui:Label tabindex="-1" text="Demo Of: Uss Selectors" display-tooltip-when-elided="true" class="label" />
+        </ui:VisualElement>
+        <ui:VisualElement name="example" style="flex-grow: 1;">
+            <ui:VisualElement name="Header" class="section" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+                <ui:Label tabindex="-1" text="Header Label" display-tooltip-when-elided="true" name="Label" />
+            </ui:VisualElement>
+            <ui:VisualElement name="Body" class="section" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+                <ui:Label tabindex="-1" text="Body Label" display-tooltip-when-elided="true" name="Label" />
+            </ui:VisualElement>
+            <ui:VisualElement name="Footer" class="section" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+                <ui:Label tabindex="-1" text="Footer Label" display-tooltip-when-elided="true" name="Label" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

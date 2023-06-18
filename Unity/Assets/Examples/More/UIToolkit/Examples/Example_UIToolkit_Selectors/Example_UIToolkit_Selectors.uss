@@ -1,0 +1,55 @@
+.screen {
+    flex-grow: 1;
+    background-color: rgb(0, 0, 0);
+    flex-direction: column;
+}
+
+.unity-label {
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    margin-left: 18px;
+    margin-right: 18px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+.instructions {
+    -unity-text-align: middle-center;
+}
+
+.section {
+    border-left-color: rgb(255, 255, 255);
+    border-right-color: rgb(255, 255, 255);
+    border-top-color: rgb(255, 255, 255);
+    border-bottom-color: rgb(255, 255, 255);
+    border-left-width: 4px;
+    border-right-width: 4px;
+    border-top-width: 4px;
+    border-bottom-width: 4px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#Header #Label {
+    -unity-font-definition: url('project://database/Assets/3rdParty/Unity/UI%20Toolkit%20Random%20Assets/UI%20Toolkit%20Random%20Assets/Fonts/AnderHedge/Ander%20Hedge%20SDF.asset?fileID=11400000&guid=f645fe7926987aa47966b6089058390c&type=2#Ander Hedge SDF');
+    font-size: 100px;
+    color: rgb(0, 0, 255);
+}
+
+#Body #Label {
+    -unity-font-definition: url('project://database/Assets/3rdParty/Unity/UI%20Toolkit%20Random%20Assets/UI%20Toolkit%20Random%20Assets/Fonts/ChelaOne/ChelaOne-Regular.asset?fileID=11400000&guid=f45e05faf094fc842b866d0980fc655c&type=2#ChelaOne-Regular');
+    font-size: 100px;
+    color: rgb(0, 255, 67);
+}
+
+#Footer #Label {
+    -unity-font-definition: url('project://database/Assets/Examples/More/UIToolkit/Approaches/Shared/Art/Fonts/verdana%20SDF.asset?fileID=11400000&guid=a075d037fe98137428ce0c2a94817b4e&type=2#verdana SDF');
+    font-size: 100px;
+    color: rgb(255, 0, 0);
+}
