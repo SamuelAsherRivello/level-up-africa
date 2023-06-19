@@ -43,7 +43,7 @@
 }
 
 #Body #Label {
-    -unity-font-definition: url('project://database/Assets/3rdParty/Unity/UI%20Toolkit%20Random%20Assets/UI%20Toolkit%20Random%20Assets/Fonts/ChelaOne/ChelaOne-Regular.asset?fileID=11400000&guid=f45e05faf094fc842b866d0980fc655c&type=2#ChelaOne-Regular');
+    -unity-font-definition: url('project://database/Assets/3rdParty/Unity/UI%20Toolkit%20Random%20Assets/UI%20Toolkit%20Random%20Assets/Fonts/AnderHedge/Ander%20Hedge%20SDF.asset?fileID=11400000&guid=f645fe7926987aa47966b6089058390c&type=2#Ander Hedge SDF');
     font-size: 100px;
     color: rgb(0, 255, 67);
 }

@@ -1,6 +1,6 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <ui:Template name="TileTemplate" src="project://database/Assets/Examples/More/UIToolkit/Examples/Example_UIToolkit_Grid/TileTemplate.uxml?fileID=9197481963319205126&amp;guid=d6fc691d60b538d47a01e7e6becc0815&amp;type=3#TileTemplate" />
-    <Style src="project://database/Assets/Examples/More/UIToolkit/Examples/Example_UIToolkit_Grid/Example_UIToolkit_Grid.uss?fileID=7433441132597879392&amp;guid=28dde38c39478b849abc43e2ba1dba90&amp;type=3#Example_UIToolkit_Grid" />
+    <ui:Template name="TileTemplate" src="project://database/Assets/Examples/More/UIToolkit/Examples/Example_UIToolkit_Grid_&amp;_Template/TileTemplate.uxml?fileID=9197481963319205126&amp;guid=d6fc691d60b538d47a01e7e6becc0815&amp;type=3#TileTemplate" />
+    <Style src="project://database/Assets/Examples/More/UIToolkit/Examples/Example_UIToolkit_Grid_&amp;_Template/Example_UIToolkit_Grid_&amp;_Template.uss?fileID=7433441132597879392&amp;guid=28dde38c39478b849abc43e2ba1dba90&amp;type=3#Example_UIToolkit_Grid_&amp;_Template" />
     <ui:VisualElement name="screen" class="screen" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
         <ui:VisualElement name="example" class="example">
             <ui:VisualElement name="Left" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-basis: 50%;" />

@@ -1,13 +1,14 @@
 .label {
-    -unity-text-align: middle-center;
+    -unity-text-align: lower-left;
     font-size: 72px;
-    -unity-font-definition: url('project://database/Assets/3rdParty/Unity/UI%20Toolkit%20Random%20Assets/UI%20Toolkit%20Random%20Assets/Fonts/ChelaOne/ChelaOne-Regular.asset?fileID=11400000&guid=f45e05faf094fc842b866d0980fc655c&type=2#ChelaOne-Regular');
-    margin-right: 50%;
+    -unity-font-definition: url('project://database/Assets/3rdParty/Unity/UI%20Toolkit%20Random%20Assets/UI%20Toolkit%20Random%20Assets/Fonts/AnderHedge/Ander%20Hedge%20SDF.asset?fileID=11400000&guid=f645fe7926987aa47966b6089058390c&type=2#Ander Hedge SDF');
+    margin-right: 0;
     color: rgb(0, 0, 0);
     -unity-text-outline-width: 2px;
     -unity-text-outline-color: rgb(255, 255, 255);
     text-shadow: 3px 3px 3px rgb(0, 0, 0);
-    margin-top: 36px;
+    margin-top: 116px;
+    margin-left: 130px;
 }
 
 .screen {
