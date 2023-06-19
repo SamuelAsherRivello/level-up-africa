@@ -132,9 +132,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 38853051}
-  - component: {fileID: 38853050}
   - component: {fileID: 38853052}
   - component: {fileID: 38853053}
+  - component: {fileID: 38853050}
   m_Layer: 0
   m_Name: UIDocument
   m_TagString: Untagged
