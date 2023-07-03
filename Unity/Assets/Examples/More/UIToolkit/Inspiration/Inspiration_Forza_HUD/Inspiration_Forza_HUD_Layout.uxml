@@ -1,10 +1,18 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <Style src="project://database/Assets/Examples/More/UIToolkit/Inspiration/Inspiration_Forza_HUD/Inspiration_Forza_HUD_Styles.uss?fileID=7433441132597879392&amp;guid=09c4f23fc2915164f89c6af8289732f6&amp;type=3#Inspiration_Forza_HUD_Styles" />
+    <Style src="project://database/Assets/Examples/More/UIToolkit/Inspiration/Inspiration_Forza_HUD/Inspiration_Forza_HUD_Styles.uss?fileID=7433441132597879392&amp;guid=8d7c30601f7f22640b5d0b7891ded7fb&amp;type=3#Inspiration_Forza_HUD_Styles" />
     <ui:VisualElement name="Screen" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
-        <ui:VisualElement name="Inspiration" class="inspiration" />
-        <ui:VisualElement name="Content" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
-            <ui:VisualElement style="flex-grow: 1; position: absolute; left: 42px; top: 244px; width: 189px; height: 27px;" />
-            <ui:VisualElement style="flex-grow: 1; position: absolute; left: 42px; top: 275px; width: 189px; height: 27px;" />
+        <ui:VisualElement name="Inspiration" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: url(&apos;project://database/Assets/Examples/More/UIToolkit/Inspiration/Shared/Sprites/forza-hud.jpg?fileID=21300000&amp;guid=71d862b8f7f13c044ac52e7de0a869a7&amp;type=3#forza-hud&apos;); -unity-background-scale-mode: scale-to-fit; position: absolute; left: 0; top: 0; right: 0; bottom: 0; opacity: 1;" />
+        <ui:VisualElement name="Content" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); position: absolute; left: 0; top: 0; right: 0; bottom: 0;">
+            <RMC.AspectRatioPanel style="flex-grow: 1;">
+                <ui:VisualElement name="1" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-basis: 17%;" />
+                <ui:VisualElement name="2" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-basis: 17%;" />
+                <ui:VisualElement name="3" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-basis: 68%; flex-direction: column;" />
+                <ui:VisualElement name="4" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-basis: 50%; flex-direction: row;">
+                    <ui:VisualElement name="A" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-basis: 20%;" />
+                    <ui:VisualElement name="B" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-basis: 60%;" />
+                    <ui:VisualElement name="C" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-basis: 20%;" />
+                </ui:VisualElement>
+            </RMC.AspectRatioPanel>
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>

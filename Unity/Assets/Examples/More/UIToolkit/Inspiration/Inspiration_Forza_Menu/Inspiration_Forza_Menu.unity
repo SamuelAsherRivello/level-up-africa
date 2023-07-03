@@ -440,9 +440,9 @@ MonoBehaviour:
   m_Script: {fileID: 19102, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_PanelSettings: {fileID: 11400000, guid: 0686e72839c4c1a49a7d7ec883d588a2, type: 2}
+  m_PanelSettings: {fileID: 11400000, guid: 7b2bfcb5b7f3aaa47b11a320b8df8777, type: 2}
   m_ParentUI: {fileID: 0}
-  sourceAsset: {fileID: 9197481963319205126, guid: 44847fe3fdaed9d4ab6c0a5251c2a081, type: 3}
+  sourceAsset: {fileID: 9197481963319205126, guid: aba78465a53f8cc4c9c9145487f1da56, type: 3}
   m_SortingOrder: 0
 --- !u!4 &2028423067
 Transform:
