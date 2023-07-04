@@ -11,7 +11,7 @@ namespace TMG.RollABallDOTS
     public class PlayerAuthoring : MonoBehaviour
     {
         // We can set this field through the inspector in the Unity editor
-        public float MoveSpeed;
+        public float MoveForce;
     }
 
     /// <summary>
@@ -27,8 +27,8 @@ namespace TMG.RollABallDOTS
             
             // Next we add components and tags to the entity as needed.
             AddComponent<PlayerTag>(playerEntity);
-            // Here we reference the MoveSpeed value in the authoring class and set that data in the new component
-            AddComponent(playerEntity, new PlayerMoveSpeed { Value = authoring.MoveSpeed });
+            // Here we reference the MoveForce value in the authoring class and set that data in the new component
+            AddComponent(playerEntity, new PlayerMoveForce { Value = authoring.MoveForce });
         }
     }
 }

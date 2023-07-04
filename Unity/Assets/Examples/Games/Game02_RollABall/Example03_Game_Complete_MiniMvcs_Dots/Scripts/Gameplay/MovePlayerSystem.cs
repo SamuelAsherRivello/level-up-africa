@@ -1,16 +1,17 @@
 ﻿using Unity.Burst;
 using Unity.Entities;
 using Unity.Mathematics;
-using Unity.Transforms;
+using Unity.Physics;
+using Unity.Physics.Extensions;
+using Unity.Physics.Systems;
 
 namespace TMG.RollABallDOTS
 {
     /// <summary>
-    /// This system moves the player in 3D space. Currently it is directly modifying the transform, but I may change
-    /// this to push the entity by a physics force for the demo.
+    /// This system moves the player in 3D space.
     /// </summary>
-    [UpdateInGroup(typeof(SimulationSystemGroup))]
-    [UpdateBefore(typeof(TransformSystemGroup))]
+    [UpdateInGroup(typeof(FixedStepSimulationSystemGroup))]
+    [UpdateBefore(typeof(PhysicsSystemGroup))]
     public partial struct MovePlayerSystem : ISystem
     {
         public void OnCreate(ref SystemState state)
@@ -23,11 +24,11 @@ namespace TMG.RollABallDOTS
         {
             float2 currentPlayerInput = SystemAPI.GetSingleton<PlayerMoveInput>().Value;
             float deltaTime = SystemAPI.Time.DeltaTime;
-            
-            foreach (var (transform, moveSpeed) in SystemAPI.Query<RefRW<LocalTransform>, PlayerMoveSpeed>().WithAll<PlayerTag>())
+
+            foreach (var (velocity, mass, moveForce) in SystemAPI.Query<RefRW<PhysicsVelocity>,PhysicsMass, PlayerMoveForce>().WithAll<PlayerTag>())
             {
-                float3 currentMoveInput = new float3(currentPlayerInput.x, 0f, currentPlayerInput.y) * moveSpeed.Value;
-                transform.ValueRW.Position += currentMoveInput * deltaTime;
+                float3 currentMoveInput = new float3(currentPlayerInput.x, 0f, currentPlayerInput.y) * moveForce.Value * deltaTime;
+                velocity.ValueRW.ApplyLinearImpulse(in mass, currentMoveInput);
             }
         }
     }

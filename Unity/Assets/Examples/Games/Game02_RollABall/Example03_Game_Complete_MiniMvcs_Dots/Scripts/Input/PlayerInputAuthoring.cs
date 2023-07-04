@@ -5,6 +5,7 @@ namespace TMG.RollABallDOTS
 {
     public class PlayerInputAuthoring : MonoBehaviour
     {
+        
     }
 
     public class PlayerInputAuthoringBaker : Baker<PlayerInputAuthoring>
