@@ -1,0 +1,10 @@
+#Content VisualElement {
+    border-left-color: rgb(255, 0, 222);
+    border-right-color: rgb(255, 0, 222);
+    border-top-color: rgb(255, 0, 222);
+    border-bottom-color: rgb(255, 0, 222);
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+}
