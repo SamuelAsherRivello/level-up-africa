@@ -26,6 +26,10 @@
     border-top-width: 0;
     border-bottom-width: 0;
     transition-duration: 0.2s;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 .button:hover {

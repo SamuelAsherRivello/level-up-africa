@@ -1,6 +1,6 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
     <Style src="project://database/Assets/Examples/More/UIToolkit/Approaches/Example_03_UIToolkit_Wrap/StatsBarStyles.uss?fileID=7433441132597879392&amp;guid=c36c01143fe79d24380f1379f1170151&amp;type=3#StatsBarStyles" />
-    <ui:VisualElement name="Content" class="stats-bar">
+    <ui:VisualElement name="Content" class="content">
         <ui:VisualElement name="Upper" class="upper">
             <ui:Label tabindex="-1" text="Health" display-tooltip-when-elided="true" name="TitleLabel" class="title-label" style="margin-bottom: -10px;" />
         </ui:VisualElement>

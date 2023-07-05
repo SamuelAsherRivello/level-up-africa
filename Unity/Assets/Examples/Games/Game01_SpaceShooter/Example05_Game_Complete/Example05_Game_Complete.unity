@@ -356,7 +356,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd532fa3f64192b468c4a37bb05418a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _shipMovementSpeed: 0.05
+  _shipMovementSpeed: 0.1
   _shipMovementSpeedMax: 1
   _shipMovementFriction: 0.01
   _rocketMovementSpeed: 1.5
