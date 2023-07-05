@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Examples/More/UIToolkit/Approaches/Example_05_UIToolkit_HybridComponent/HybridComponentStyles.uss?fileID=7433441132597879392&amp;guid=1999de659eb5bff47b4f4b73e756c9c5&amp;type=3#HybridComponentStyles" />
+    <ui:VisualElement name="Screen" class="screen">
+        <ui:VisualElement name="Content" class="content">
+            <RMC.LevelUpAfrica.Examples.More.UIToolkit.Approaches.Example_05_UIToolkit_HybridComponent.StatsBar name="StatsBar" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

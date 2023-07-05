@@ -1,0 +1,5 @@
+Example_04_UIToolkit_ScriptComponent
+
+This is still todo.
+
+The idea is to completely create the component with C#. Without any uxml inside.

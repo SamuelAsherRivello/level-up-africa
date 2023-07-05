@@ -3,23 +3,48 @@ using InstAnime;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UIElements;
+using InstantAnimator = RMC.Core.Animator.InstantAnimator;
 
-//ReSharper disable PrivateFieldCanBeConvertedToLocalVariable
-//ReSharper disable ArrangeAccessorOwnerBody
-namespace RMC.LevelUpAfrica.Examples.More.UIToolkit.Approaches.Example_03_UIToolkit_Wrap
+namespace RMC.LevelUpAfrica.Examples.More.UIToolkit.Approaches.Example_05_UIToolkit_HybridComponent
 {
-    //  Namespace Properties ------------------------------
-
-    //  Class Attributes ----------------------------------
-    public class StatsBarWrapperUnityEvent : UnityEvent<StatsBarWrapper>{}
-
+    
+    
     /// <summary>
-    /// Demonstrates a **RAW** approach to using UIToolkit.
+    /// 
     /// </summary>
-    public class StatsBarWrapper 
+    public sealed class StatsBar : VisualElement
     {
+        //  Internal Classes ----------------------------------
+        public class StatsBarUnityEvent : UnityEvent<StatsBar>{}
+        
+        
+        /// <summary>
+        /// 
+        /// </summary>
+        public new class UxmlTraits : VisualElement.UxmlTraits {}
+    
+        /// <summary>
+        /// 
+        /// </summary>
+        public new class UxmlFactory : UxmlFactory<StatsBar, UxmlTraits>
+        {
+            public override VisualElement Create(IUxmlAttributes bag, CreationContext cc)
+            {
+                VisualTreeAsset visualTreeAsset = Resources.Load<VisualTreeAsset>("StatsBar/Uxml/StatsBarLayout");
+                VisualElement rootVisualElement = base.Create(bag, cc);
+                visualTreeAsset.CloneTree(rootVisualElement);
+
+                StatsBar statsBar = rootVisualElement.Q<StatsBar>();
+                statsBar.Initialize(statsBar);
+                
+                return rootVisualElement;
+            }
+        }
+
+
+
         //  Events ----------------------------------------
-        public readonly StatsBarWrapperUnityEvent OnClicked = new StatsBarWrapperUnityEvent();
+        public readonly StatsBarUnityEvent OnClicked = new StatsBarUnityEvent();
 
         //  Properties ------------------------------------
         public float Value
@@ -61,19 +86,19 @@ namespace RMC.LevelUpAfrica.Examples.More.UIToolkit.Approaches.Example_03_UITool
                 _detailsLabel.text = value;
             }
         }
-        
+
 
         //  Fields ----------------------------------------
-        private readonly VisualElement _visualElement;
-        private readonly Label _titleLabel;
-        private readonly Label _detailsLabel;
+        private VisualElement _visualElement;
+        private Label _titleLabel;
+        private Label _detailsLabel;
         private VisualElement _icon;
         private VisualElement _barFill;
         private float _value;
         private CancellationTokenSource _cancellationToken;
 
-        //  Initialization  ---------------------------------
-        public StatsBarWrapper(VisualElement visualElement)
+        //  Initialization --------------------------------
+        public void Initialize (VisualElement visualElement)
         {
             _visualElement = visualElement;
             
@@ -122,12 +147,11 @@ namespace RMC.LevelUpAfrica.Examples.More.UIToolkit.Approaches.Example_03_UITool
                 UpdateMode.Unscaled);
         }
         
-
+        
         //  Event Handlers --------------------------------
         private void Icon_OnClicked(ClickEvent evt)
         {
             OnClicked.Invoke(this);
-
         }
     }
 }
