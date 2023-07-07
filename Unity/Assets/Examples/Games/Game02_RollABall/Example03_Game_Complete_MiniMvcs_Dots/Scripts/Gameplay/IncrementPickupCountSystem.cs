@@ -19,6 +19,8 @@ namespace TMG.RollABallDOTS
         {
             var pickupsThisFrame = _pickupQuery.CalculateEntityCount();
 
+            if(pickupsThisFrame <= 0) return;
+            
             var pickupCounter = SystemAPI.GetSingleton<PickupCounter>();
             pickupCounter.CurrentCount += pickupsThisFrame;
             SystemAPI.SetSingleton(pickupCounter);

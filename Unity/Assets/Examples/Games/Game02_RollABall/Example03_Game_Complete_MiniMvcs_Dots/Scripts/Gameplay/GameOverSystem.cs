@@ -1,9 +1,12 @@
-﻿using Unity.Entities;
+﻿using System;
+using Unity.Entities;
 
 namespace TMG.RollABallDOTS
 {
     public partial class GameOverSystem : SystemBase
     {
+        public Action OnGameOver;
+        
         protected override void OnCreate()
         {
             RequireForUpdate<GameOverTag>();
@@ -11,6 +14,8 @@ namespace TMG.RollABallDOTS
 
         protected override void OnStartRunning()
         {
+            OnGameOver?.Invoke();
+            
             var simulationSystemGroup = World.GetExistingSystemManaged(typeof(SimulationSystemGroup));
             simulationSystemGroup.Enabled = false;
         }
