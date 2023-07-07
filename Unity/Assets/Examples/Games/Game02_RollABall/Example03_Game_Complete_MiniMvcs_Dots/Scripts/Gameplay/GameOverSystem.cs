@@ -1,5 +1,4 @@
 ﻿using Unity.Entities;
-using UnityEngine;
 
 namespace TMG.RollABallDOTS
 {
@@ -12,7 +11,8 @@ namespace TMG.RollABallDOTS
 
         protected override void OnStartRunning()
         {
-            Debug.Log("Game Over!");
+            var simulationSystemGroup = World.GetExistingSystemManaged(typeof(SimulationSystemGroup));
+            simulationSystemGroup.Enabled = false;
         }
 
         protected override void OnUpdate()
