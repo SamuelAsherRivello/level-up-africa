@@ -4,6 +4,11 @@ using UnityEngine;
 
 namespace TMG.RollABallDOTS
 {
+    /// <summary>
+    /// The sound effects are implemented using cleanup components which are a more intermediate concept of Unity ECS.
+    /// In short, they allow us to run some initialization logic to load an audio clip from the resources folder, then
+    /// run some cleanup logic to get rid of the generated GameObject.
+    /// </summary>
     [RequireMatchingQueriesForUpdate]
     public partial class InitializeAudioSourceSystem : SystemBase
     {

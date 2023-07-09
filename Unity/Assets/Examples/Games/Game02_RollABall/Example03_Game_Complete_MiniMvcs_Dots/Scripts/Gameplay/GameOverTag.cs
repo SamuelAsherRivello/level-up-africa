@@ -2,8 +2,8 @@
 
 namespace TMG.RollABallDOTS
 {
-    public struct GameOverTag : IComponentData
-    {
-        
-    }
+    /// <summary>
+    /// This tag is added to an entity to signal that the player has collected a sufficient number of pickups to win
+    /// </summary>
+    public struct GameOverTag : IComponentData {}
 }
