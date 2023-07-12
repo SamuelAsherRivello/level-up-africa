@@ -1,0 +1,10 @@
+Overview:
+* This repo contains multiple versions of the "RollABall" game.
+
+This Version's Architecture:
+* Has no Mini MVCS framework
+* Has Unity DOTS
+
+This Version's Features:
+* Has Unity UI Toolkit
+* Has Unity Input System
