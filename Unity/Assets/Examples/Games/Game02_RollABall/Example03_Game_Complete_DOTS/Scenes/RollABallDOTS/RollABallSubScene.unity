@@ -1208,11 +1208,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e9db9ccee3c4508a449569eaec5017f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Vector:
-    x: 30
-    y: 45
-    z: 15
   Speed: 2.5
+  Direction:
+    x: 5
+    y: 10
+    z: 15
 --- !u!65 &1535103198781836437
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1246,11 +1246,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e9db9ccee3c4508a449569eaec5017f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Vector:
-    x: 30
-    y: 45
-    z: 15
   Speed: 2.5
+  Direction:
+    x: 5
+    y: 10
+    z: 15
 --- !u!54 &1595757792512350425
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1431,11 +1431,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e9db9ccee3c4508a449569eaec5017f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Vector:
-    x: 30
-    y: 45
-    z: 15
   Speed: 2.5
+  Direction:
+    x: 5
+    y: 10
+    z: 15
 --- !u!65 &1799974725487586352
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1603,11 +1603,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e9db9ccee3c4508a449569eaec5017f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Vector:
-    x: 30
-    y: 45
-    z: 15
   Speed: 2.5
+  Direction:
+    x: 5
+    y: 10
+    z: 15
 --- !u!23 &2164273666026434707
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1733,11 +1733,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e9db9ccee3c4508a449569eaec5017f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Vector:
-    x: 30
-    y: 45
-    z: 15
   Speed: 2.5
+  Direction:
+    x: 5
+    y: 10
+    z: 15
 --- !u!4 &2531862161484313402
 Transform:
   m_ObjectHideFlags: 0
@@ -1991,11 +1991,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e9db9ccee3c4508a449569eaec5017f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Vector:
-    x: 30
-    y: 45
-    z: 15
   Speed: 2.5
+  Direction:
+    x: 5
+    y: 10
+    z: 15
 --- !u!54 &2870685621814594093
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2035,11 +2035,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e9db9ccee3c4508a449569eaec5017f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Vector:
-    x: 30
-    y: 45
-    z: 15
   Speed: 2.5
+  Direction:
+    x: 5
+    y: 10
+    z: 15
 --- !u!54 &2957341238397316333
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2186,11 +2186,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e9db9ccee3c4508a449569eaec5017f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Vector:
-    x: 30
-    y: 45
-    z: 15
   Speed: 2.5
+  Direction:
+    x: 5
+    y: 10
+    z: 15
 --- !u!33 &3465807237584622645
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -2337,11 +2337,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e9db9ccee3c4508a449569eaec5017f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Vector:
-    x: 30
-    y: 45
-    z: 15
   Speed: 2.5
+  Direction:
+    x: 5
+    y: 10
+    z: 15
 --- !u!65 &4663230611700336597
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2488,11 +2488,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e9db9ccee3c4508a449569eaec5017f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Vector:
-    x: 30
-    y: 45
-    z: 15
   Speed: 2.5
+  Direction:
+    x: 5
+    y: 10
+    z: 15
 --- !u!65 &6507408694181100263
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2639,11 +2639,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e9db9ccee3c4508a449569eaec5017f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Vector:
-    x: 30
-    y: 45
-    z: 15
   Speed: 2.5
+  Direction:
+    x: 5
+    y: 10
+    z: 15
 --- !u!54 &6993958944624095650
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2817,8 +2817,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e9db9ccee3c4508a449569eaec5017f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Vector:
-    x: 30
-    y: 45
-    z: 15
   Speed: 2.5
+  Direction:
+    x: 5
+    y: 10
+    z: 15
