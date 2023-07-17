@@ -3,7 +3,7 @@
 
 This repo includes Unity Demos. **Level Up Africa offers** the "Unity Game Development Training" program for students in the African continent.
 
-
+Learn more about [Level Up Africa](https://www.samuelasherrivello.com/courses/level-up-africa/) and enjoy!
 
 **Getting Started**
 1. Download this repo (*.zip or *.git)
