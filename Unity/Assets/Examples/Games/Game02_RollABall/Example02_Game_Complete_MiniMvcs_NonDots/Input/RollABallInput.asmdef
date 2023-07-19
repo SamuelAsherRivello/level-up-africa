@@ -1,10 +1,8 @@
 {
-    "name": "RMC.Core.Mini.Samples.RollABall.Advanced.Runtime",
+    "name": "RollABallInput",
     "rootNamespace": "",
     "references": [
-        "GUID:4245cf09d0036f34e8bb2477b3fed3c2",
-        "GUID:75469ad4d38634e559750d17036d5f7c",
-        "GUID:6619c44992a9b7c49b4a4b97aabda57a"
+        "GUID:75469ad4d38634e559750d17036d5f7c"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

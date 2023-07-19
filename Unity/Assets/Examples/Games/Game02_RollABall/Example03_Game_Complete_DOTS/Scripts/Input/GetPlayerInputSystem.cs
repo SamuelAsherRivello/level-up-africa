@@ -1,6 +1,6 @@
 ﻿using Unity.Entities;
 using UnityEngine;
-
+#pragma warning disable CS0436 // Type conflicts with imported type
 namespace TMG.RollABallDOTS
 {
     /// <summary>

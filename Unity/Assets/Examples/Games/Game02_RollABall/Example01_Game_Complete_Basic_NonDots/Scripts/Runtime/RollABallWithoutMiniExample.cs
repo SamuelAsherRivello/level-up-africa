@@ -131,8 +131,9 @@ namespace RMC.Core.Architectures.Mini.Samples.RollABall.WithoutMini
             {
                 _isGameOver = true;
                 _statusText = "You Win!";
-                UpdateUI();
             }
+            
+            UpdateUI();
         }
     }
 }

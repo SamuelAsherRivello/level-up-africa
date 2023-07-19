@@ -30,7 +30,7 @@ namespace RMC.Core.Architectures.Mini.Samples.RollABall.WithMini.Mini.View
         private bool _isInitialized = false;
         private IContext _context;
 
-        private RollABallInputActions _rollABallInputActions;
+        private RollABallInput _rollABallInput;
         private float _playerMovementSpeed = 0;
 
         //  Initialization  -------------------------------
@@ -41,8 +41,8 @@ namespace RMC.Core.Architectures.Mini.Samples.RollABall.WithMini.Mini.View
                 _isInitialized = true;
                 _context = context;
 
-                _rollABallInputActions = new RollABallInputActions();
-                _rollABallInputActions.Enable();
+                _rollABallInput = new RollABallInput();
+                _rollABallInput.Enable();
                 
                 //Model
                 RollABallModel rollABallModel = Context.ModelLocator.GetItem<RollABallModel>();
@@ -63,12 +63,12 @@ namespace RMC.Core.Architectures.Mini.Samples.RollABall.WithMini.Mini.View
         //  Unity Methods ---------------------------------
         private void OnEnable()
         {
-            _rollABallInputActions?.Enable();
+            _rollABallInput?.Enable();
         }
 
         private void OnDisable()
         {
-            _rollABallInputActions?.Disable();
+            _rollABallInput?.Disable();
         }
 
         protected void Update()
@@ -79,9 +79,9 @@ namespace RMC.Core.Architectures.Mini.Samples.RollABall.WithMini.Mini.View
             }
 
             //Input
-            // You can indeed connect to input-specific events from _rollABallInputActions
+            // You can indeed connect to input-specific events from _rollABallInput
             // However, we want to 'always' be moving (with friction) and using Update() is best
-            Vector2 movementAxis = _rollABallInputActions.Player.Movement.ReadValue<Vector2>();
+            Vector2 movementAxis = _rollABallInput.Standard.PlayerMoveInput.ReadValue<Vector2>();
             float moveHorizontal = movementAxis.x * Time.deltaTime * _playerMovementSpeed;
             float moveVertical = movementAxis.y * Time.deltaTime * _playerMovementSpeed;
             Vector3 movement = new Vector3 (moveHorizontal, 0.0f, moveVertical);
